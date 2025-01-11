@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="iniciotitulo">Inicio</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
+  <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-danger navbar-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <!--<img src="img/logoo.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">--> <!-- el logo -->
+      </a>
+      <!-- Selector de idioma -->
+      <div>
+        <select id="language-selector" class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>          
+        </select>
+      </div>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#descripcion" data-i18n="submenu1">Descripción del Proyecto</a>
+          <a class="nav-link" href="#importancia" data-i18n="submenu2">Importancia</a>
+          <a class="nav-link" href="#beneficios" data-i18n="submenu3">Beneficios</a>
+          <a class="nav-link" href="#faq" data-i18n="submenu4">Preguntas Frecuentes</a>
+          <a class="btn btn-door" href="index.html"><i class="fas fa-door-open"></i> </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <!--Aqui termina el script para el cambio de idiomas (internalizacion)-->
+
+      <!--scrip para la internalizacion del contenido-->
+      <script>
+        //Función para cargar el archivo XML -->
+       function loadTranslations(language) {
+         var xhr = new XMLHttpRequest();
+         xhr.open("GET", "internacional.xml", true);
+         xhr.onreadystatechange = function () {
+           if (xhr.readyState === 4 && xhr.status === 200) {
+             var parser = new DOMParser();
+             var xmlDoc = parser.parseFromString(xhr.responseText, "application/xml");
+   
+             var translations = {};
+             var keys = xmlDoc.getElementsByTagName("key");
+             for (var i = 0; i < keys.length; i++) {
+               var name = keys[i].getAttribute("name");
+               var value = keys[i].getElementsByTagName(language)[0].textContent;
+               translations[name] = value;
+             }
+   
+             i18next.init(
+               {
+                 lng: language,
+                 resources: {
+                   [language]: {
+                     translation: translations,
+                   },
+                 },
+               },
+               function (err, t) {
+                 document.querySelectorAll("[data-i18n]").forEach(function (element) {
+                   element.innerHTML = t(element.getAttribute("data-i18n"));
+                 });
+               }
+             );
+           }
+         };
+         xhr.send();
+       }
+   
+       // Cambiar idioma con el selector
+       document.getElementById("language-selector").addEventListener("change", function () {
+         loadTranslations(this.value);
+       });
+   
+       // Idioma predeterminado al cargar la página
+       window.onload = function () {
+         loadTranslations("es");
+       };
+     </script>
+    <!--Aqui termina el script de la internalizacion del contenido-->
+
+
+  <section class="bg-black">
+    <div class="carousel-inner py-5" style="min-height: 100vh;">
+        <div class="carousel-item active">
+            <img src="pruebafotos/fondo8.webp" class="d-block w-100" alt="Menú saludable" style="height: 80vh; object-fit: cover; opacity: 0.7;">
+            <div class="carousel-caption d-flex justify-content-center align-items-center h-100" style="background: rgba(0, 0, 0, 0.622);">
+                <h2 class="text-gradient fs-1 text-center animate__animated animate__bounceIn   fw-bold" data-i18n="iniinicio">BIENVENIDO AL MENU INICIO</h2>
+            </div>
+        </div>
+    </div>
+  </section>
+ 
+<div class="container mt-4">
+  <!-- Sección 1: Descripción -->
+  <div id="descripcion" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+    <div class="row align-items-center">
+        <!-- Columna de Texto -->
+        <div class="col-md-6">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="inidescripcion1">Descripción</h2>
+            <p class="mt-3 text-lg text-gray-700" data-i18n="inidescripcion2">
+              Tener una página web de opiniones sobre series te permite compartir tu pasión por la televisión con una comunidad de fans, construir una plataforma para analizar tus series favoritas, y desarrollar tus habilidades de escritura y crítica. Podrás descubrir nuevas series, interactuar con otros espectadores, y hasta convertirte en una referencia en el mundo de las series. Además, tendrás la libertad creativa de escribir sobre lo que quieras y de la manera que quieras, y podrás llegar a un público global. ¡Es una oportunidad única para conectar con otros amantes de la televisión y compartir tu conocimiento y entusiasmo!
+            </p>
+        </div>
+        <!-- Columna de Imagen -->
+        <div class="col-md-6">
+            <img src="img/principal1.jpg" alt="Descripción del proyecto" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</div>
+
+
+  <!-- Sección 2: Importancia -->
+  <div id="importancia" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+    <div class="row align-items-center">
+        <!-- Columna de Imagen -->
+        <div class="col-md-6">
+            <img src="img/importancia.jpg" alt="Importancia" class="img-fluid rounded shadow">
+        </div>
+        <!-- Columna de Texto -->
+        <div class="col-md-6">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="iniimportancia1">Importancia de Conocer Opiniones sobre Series</h2>
+            <p class="mt-3 text-lg text-gray-700" data-i18n="iniimportancia2">
+                Las opiniones de los espectadores ayudan a las plataformas de contenido a mejorar su catálogo y ofrecen a los usuarios la oportunidad de descubrir nuevas series que se ajusten a sus intereses. Además, promueven el diálogo y la interacción entre personas con gustos similares.
+            </p>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Sección 3: Beneficios de Participar -->
+    <div id="beneficios" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+      <div class="row align-items-center">
+          <!-- Columna de Texto -->
+          <div class="col-md-6">
+              <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="inibeneficios1">Beneficios de Participar</h2>
+              <ul class="list-disc list-inside text-lg text-gray-700 space-y-3">
+                  <li data-i18n="inibeneficios2">Descubrir nuevas series: Al interactuar con otros usuarios, tendrás acceso a recomendaciones personalizadas y podrás descubrir series que quizás no conocías. La comunidad te ayudará a ampliar tu horizonte televisivo.</li>
+                  <li data-i18n="inibeneficios3">Compartir tu pasión: Las plataformas de opinión son el lugar perfecto para conectar con personas que comparten tu amor por las series. Podrás discutir tus series favoritas, analizar personajes, teorías y mucho más.</li>
+                  <li data-i18n="inibeneficios4">Influir en la comunidad: Tus opiniones pueden influir en las decisiones de otros usuarios. Si eres un fanático de una serie en particular, puedes ayudar a que otros la descubran y la valoren.</li>
+                  <li data-i18n="inibeneficios5">Mantenerte actualizado: Las plataformas de opinión suelen ser las primeras en recibir noticias y novedades sobre las series. Estarás al tanto de los últimos estrenos, cancelaciones y todo lo relacionado con el mundo televisivo.</li>
+                  <li data-i18n="inibeneficios6">Desarrollar tus habilidades de escritura y comunicación: Al escribir reseñas y comentarios, mejorarás tu capacidad para expresar tus ideas de forma clara y concisa. Además, podrás desarrollar un estilo de escritura más personal y atractivo.</li>
+                </ul>
+          </div>
+          <!-- Columna de Imagen -->
+          <div class="col-md-6">
+              <img src="img/beneficio1.jpg" alt="Beneficios" class="img-fluid rounded shadow">
+          </div>
+      </div>
+    </div>
+
+
+  <!-- Sección 4: Preguntas Frecuentes -->
+  <div id="faq" class="container mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+    <div class="row align-items-center">
+        <!-- Columna de Imagen -->
+        <div class="col-md-4">
+            <img src="img/preguntas.webp" alt="Beneficios" class="img-fluid rounded shadow">
+        </div>
+        <!-- Columna de Texto -->
+        <div class="col-md-6">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4" data-i18n="inipregunta1">Preguntas Frecuentes</h2>
+            <div class="text-lg text-gray-700 space-y-4">
+                <p>
+                    <strong data-i18n="inipregunta2">1. ¿Qué tipo de series se incluyen en el análisis?</strong><br> 
+                    <p data-i18n="inipregunta3">Todas las series disponibles en plataformas de streaming como Netflix, HBO, Disney+, entre otras.</p>
+                </p>
+                <p>
+                    <strong data-i18n="inipregunta4">2. ¿Es obligatorio participar en las encuestas?</strong><br> 
+                    <p data-i18n="inipregunta5">No, pero tu participación ayudará a mejorar las recomendaciones y análisis del proyecto.</p>
+                </p>
+                <p>
+                    <strong data-i18n="inipregunta6">3. ¿Dónde puedo ver los resultados?</strong><br> 
+                    <p data-i18n="inipregunta7">Los resultados se publican en la sección "Resultados" de nuestro sitio web.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+  <footer class="bg-dark text-white py-3 mt-4">
+      <div class="container text-center">
+          <p data-i18n="inifooter">2025. Derechos reservados.</p>
+          <div class="social-icons mt-3">
+              <a class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a class="text-white"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+  </footer>
+  <style>
+    .text-gradient {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimation 3s ease-in-out infinite;
+    }
+
+    @keyframes textAnimation {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    body {
+            background-image: url('pruebafotos/fondo4.avif')
+        }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

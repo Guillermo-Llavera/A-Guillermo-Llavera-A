@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="entitulo">Encuesta de Actividades</title>
+  <link rel="stylesheet" href="encuesta.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
+  <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-danger navbar-light sticky-top">
+    <div class="container-fluid">
+      <!-- Selector de idioma -->
+      <div>
+        <select id="language-selector" class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>          
+        </select>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>  
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#seleccion" data-i18n="ensubmenu1">Selección de series populares</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evaluacion" data-i18n="ensubmenu2">Evaluación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#frecuencia" data-i18n="ensubmenu3">Preferencias de plataformas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#confirmacion" data-i18n="ensubmenu4">Confirmar Respuestas</a></li>
+          <a class="btn btn-door" href="index.html"> <i class="fas fa-door-open"></i></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!--scrip para la internalizacion del contenido-->
+    <script>
+      //Función para cargar el archivo XML -->
+     function loadTranslations(language) {
+       var xhr = new XMLHttpRequest();
+       xhr.open("GET", "internacional.xml", true);
+       xhr.onreadystatechange = function () {
+         if (xhr.readyState === 4 && xhr.status === 200) {
+           var parser = new DOMParser();
+           var xmlDoc = parser.parseFromString(xhr.responseText, "application/xml");
+ 
+           var translations = {};
+           var keys = xmlDoc.getElementsByTagName("key");
+           for (var i = 0; i < keys.length; i++) {
+             var name = keys[i].getAttribute("name");
+             var value = keys[i].getElementsByTagName(language)[0].textContent;
+             translations[name] = value;
+           }
+ 
+           i18next.init(
+             {
+               lng: language,
+               resources: {
+                 [language]: {
+                   translation: translations,
+                 },
+               },
+             },
+             function (err, t) {
+               document.querySelectorAll("[data-i18n]").forEach(function (element) {
+                 element.innerHTML = t(element.getAttribute("data-i18n"));
+               });
+             }
+           );
+         }
+       };
+       xhr.send();
+     }
+ 
+     // Cambiar idioma con el selector
+     document.getElementById("language-selector").addEventListener("change", function () {
+       loadTranslations(this.value);
+     });
+ 
+     // Idioma predeterminado al cargar la página
+     window.onload = function () {
+       loadTranslations("es");
+     };
+   </script>
+  <!--Aqui termina el script de la internalizacion del contenido-->
+
+  <section class="bg-black">
+    <div class="carousel-inner py-5" style="min-height: 100vh;">
+        <div class="carousel-item active">
+            <img src="pruebafotos/fondo8.webp" class="d-block w-100" alt="Menú saludable" style="height: 80vh; object-fit: cover; opacity: 0.7;">
+            <div class="carousel-caption d-flex justify-content-center align-items-center h-100" style="background: rgba(0, 0, 0, 0.622);">
+                <h2 class="text-gradient fs-1 text-center animate__animated animate__bounceIn fw-bold" data-i18n="encuesta">REALIZA TU ENCUESTA</h2>
+            </div>
+        </div>
+    </div>
+  </section>
+  <style>
+    .text-gradient {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimation 3s ease-in-out infinite;
+    }
+
+    @keyframes textAnimation {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    body {
+            background-image: url('pruebafotos/fondo3.avif')
+        }
+  </style>
+
+  <!-- SECCIONES -->
+  <div class="container mt-5">
+    <form id="encuesta-form">
+      <!-- Seccion: Selección de series populares -->
+      <section id="seleccion" class="mb-5 text-gray-900">
+        <h2 class="text-center mb-4 text-3xl font-bold" data-i18n="enseleccion1">Selecciona tus series populares</h2>        
+        <div class="row justify-content-center" id="series-populares">
+        </div>
+    </section>
+    
+
+      <!-- Evaluación por género, trama, personajes -->
+      <section id="evaluacion" class="bg-red-200 text-gray-900 py-8">
+        <h2 class="text-3xl font-bold text-center mb-6" data-i18n="enevaluacion1">Evaluación de Series</h2>
+        
+        <!-- Evaluación de Género -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-3" data-i18n="enevaluacion2">1. ¿Qué género prefieres en las series?</h3>
+            <div class="space-y-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="genero" value="accion" id="accion" data-i18n="enevaluacion3">
+                    <label class="form-check-label" for="accion">
+                        <i class="fas fa-fist-raised"></i> Acción
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="genero" value="comedia" id="comedia" data-i18n="enevaluacion4">
+                    <label class="form-check-label" for="comedia">
+                        <i class="fas fa-laugh"></i> Comedia
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="genero" value="drama" id="drama" data-i18n="enevaluacion5">
+                    <label class="form-check-label" for="drama">
+                        <i class="fas fa-theater-masks"></i> Drama
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="genero" value="fantasia" id="fantasia" data-i18n="enevaluacion6">
+                    <label class="form-check-label" for="fantasia">
+                        <i class="fas fa-magic"></i> Fantasía
+                    </label>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Evaluación de Trama -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-3" data-i18n="enevaluacion7">2. ¿Qué tipo de trama te atrae más?</h3>
+            <div class="space-y-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trama" value="intrigante" id="intrigante" data-i18n="enevaluacion8">
+                    <label class="form-check-label" for="intrigante">
+                        <i class="fas fa-search"></i> Intrigante
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trama" value="compleja" id="compleja" data-i18n="enevaluacion9">
+                    <label class="form-check-label" for="compleja">
+                        <i class="fas fa-cogs"></i> Narrativa Compleja
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trama" value="emocional" id="emocional" data-i18n="enevaluacion10">
+                    <label class="form-check-label" for="emocional">
+                        <i class="fas fa-heart"></i> Emocional
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="trama" value="comica" id="comica" data-i18n="enevaluacion11">
+                    <label class="form-check-label" for="comica">
+                        <i class="fas fa-smile"></i> Cómica
+                    </label>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Evaluación de Personajes -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-3" data-i18n="enevaluacion12">3. ¿Qué tipo de personajes prefieres?</h3>
+            <div class="space-y-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="personajes" value="heroe" id="heroe" data-i18n="enevaluacion13">
+                    <label class="form-check-label" for="heroe">
+                        <i class="fas fa-shield-alt"></i> Héroe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="personajes" value="antihéroe" id="antihéroe" data-i18n="enevaluacion14">
+                    <label class="form-check-label" for="antihéroe">
+                        <i class="fas fa-user-alt-slash"></i> Antihéroe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="personajes" value="villano" id="villano" data-i18n="enevaluacion15">
+                    <label class="form-check-label" for="villano">
+                        <i class="fas fa-skull-crossbones"></i> Villano
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="personajes" value="secundario" id="secundario" data-i18n="enevaluacion16">
+                    <label class="form-check-label" for="secundario">
+                        <i class="fas fa-users"></i> Secundario Destacado
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- Preferencias de plataformas -->
+      <section id="frecuencia" class="mb-5">
+        <h2 data-i18n="enfrecuencia1">Preferencia de Plataformas</h2>
+        <div class="mb-3">
+          <label for="frecuencia-select" class="form-label" data-i18n="enfrecuencia2">En qué plataforma mira más seguido sus series:</label>
+          <select class="form-select" id="frecuencia-select" name="plataforma">
+            <!-- Las opciones se llenan dinámicamente con JavaScript -->
+          </select>
+        </div>
+        <div class="mb-3 ">
+          <label for="descripcion" class="form-label" data-i18n="enfrecuencia3">Describe brevemente por qué te gustan estas actividades:</label>
+          <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+        </div>
+      </section>
+
+      <!-- Confirmación de respuestas -->
+      <section id="confirmacion">
+        <h2 class="text-primary" data-i18n="enconfirmacion1">Confirmación de Respuestas</h2>
+        <button type="submit" id="confirm-button" class="btn btn-success" data-i18n="enconfirmacion2">Confirmar Respuestas</button>
+        <div id="confirmation-message" class="alert alert-success mt-3 d-none" data-i18n="enconfirmacion3">Tus respuestas han sido guardadas correctamente.</div>
+      </section>
+    </form>
+  </div>
+
+  <footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+      <p data-i18n="enfooter">2025 Encuesta de Actividades. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const dataUrl = 'encuesta.json';
+    const form = document.getElementById('encuesta-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    // Cargar datos y renderizar opciones
+    fetch(dataUrl)
+      .then(response => response.json())
+      .then(data => {
+        const seriesContainer = document.getElementById('series-populares');
+        data.actividades.forEach(actividad => {
+          const checkbox = `<div class="col-md-4">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="series" value="${actividad}" id="${actividad}">
+                                <label class="form-check-label" for="${actividad}">${actividad}</label>
+                              </div>
+                            </div>`;
+          seriesContainer.insertAdjacentHTML('beforeend', checkbox);
+        });
+
+        const frecuenciaSelect = document.getElementById('frecuencia-select');
+        data.frecuencias.forEach(frecuencia => {
+          const option = `<option value="${frecuencia}">${frecuencia}</option>`;
+          frecuenciaSelect.insertAdjacentHTML('beforeend', option);
+        });
+      });
+
+    // Confirmar respuestas
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      confirmationMessage.classList.remove('d-none');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

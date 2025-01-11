@@ -1,0 +1,99 @@
+{
+    "Inicio": [
+        { "nombre": { "es": "Descripción del proyecto", "en": "Project Description" }, "link": "inicio.html#descripcion" },
+        { "nombre": { "es": "Importancia de conocer opiniones sobre series", "en": "Importance of knowing opinions about series" }, "link": "inicio.html#importancia" },
+        { "nombre": { "es": "Beneficios de participar", "en": "Benefits of participating" }, "link": "inicio.html#beneficios" },
+        { "nombre": { "es": "Descripción del proyecto", "en": "Project Description" }, "link": "inicio.html#faq" }
+    ],
+    "Home": [
+        { "nombre": { "es": "Descripción del proyecto", "en": "Project Description" }, "link": "inicio.html#descripcion" },
+        { "nombre": { "es": "Importancia de conocer opiniones sobre series", "en": "Importance of knowing opinions about series" }, "link": "inicio.html#importancia" },
+        { "nombre": { "es": "Beneficios de participar", "en": "Benefits of participating" }, "link": "inicio.html#beneficios" },
+        { "nombre": { "es": "Preguntas frecuentes", "en": "Frequently asked questions" }, "link": "inicio.html#faq" }
+    ],
+    "Encuesta de Opinion": [
+        { "nombre": { "es": "Selección de series populares", "en": "Selection of popular series" }, "link": "encuesta.html#seleccion" },
+        { "nombre": { "es": "Evaluación por género, trama, personajes", "en": "Evaluation by genre, plot, characters" }, "link": "encuesta.html#evaluacion" },
+        { "nombre": { "es": "Pregunta sobre preferencias de plataformas", "en": "Question about platform preferences" }, "link": "encuesta.html#frecuencia" },
+        { "nombre": { "es": "Confirmación de respuestas", "en": "Confirmation of answers" }, "link": "encuesta.html#confirmacion" }
+    ],
+    "Opinion Survey": [
+        { "nombre": { "es": "Selección de series populares ", "en": "Selection of popular series" }, "link": "encuesta.html#seleccion" },
+        { "nombre": { "es": "Evaluación por género, trama, personajes", "en": "Evaluation by genre, plot, characters" }, "link": "encuesta.htmlevaluacion" },
+        { "nombre": { "es": "Pregunta sobre preferencias de plataformas", "en": "Question about platform preferences" }, "link": "encuesta.html#frecuencia" },
+        { "nombre": { "es": "Confirmación de respuestas", "en": "Confirmation of answers" }, "link": "encuesta.html#confirmacion" }
+    ],
+    "Resultados": [
+        { "nombre": { "es": "Estadísticas generales", "en": "General statistics" }, "link": "resultados.html#estadistica" },
+        { "nombre": { "es": "Comparación de gustos por regiones", "en": "Comparison of tastes by region" }, "link": "resultados.html#comparacion" },
+        { "nombre": { "es": "Gráficos interactivos de preferencia", "en": "Interactive preference charts" }, "link": "resultados.html#graficos" },
+        { "nombre": { "es": "Análisis detallado por género", "en": "Detailed analysis by gender" }, "link": "resultados.html#analisis" }
+    ],
+    "Results": [
+        { "nombre": { "es": "Estadísticas generales", "en": "General statistics" }, "link": "resultados.html#estadistica" },
+        { "nombre": { "es": "Comparación de gustos por regiones", "en": "Comparison of tastes by region" }, "link": "resultados.html#comparacion" },
+        { "nombre": { "es": "Gráficos interactivos de preferencia", "en": "Interactive preference charts" }, "link": "resultados.html#graficos" },
+        { "nombre": { "es": "Análisis detallado por género", "en": "Detailed analysis by gender" }, "link": "resultados.html#analisis" }
+    ],
+    "Recomendaciones": [
+        { "nombre": { "es": "Sugerencias de series según gustos", "en": "Suggestions for series according to tastes" }, "link": "recomendaciones.html#sugerencias" },
+        { "nombre": { "es": "Lista de series populares", "en": "List of popular series" }, "link": "recomendaciones.html#lista" },
+        { "nombre": { "es": "Reseñas y comentarios de usuarios", "en": "User reviews and comments" }, "link": "recomendaciones.html#reseñas" },
+        { "nombre": { "es": "Actualizaciones y nuevos lanzamientos", "en": "Updates and new releases" }, "link": "recomendaciones.html#actualizacion" }
+    ],
+    "Recommendations": [
+        { "nombre": { "es": "Sugerencias de series según gustos", "en": "Suggestions for series according to tastes" }, "link": "recomendaciones.html#sugerencias" },
+        { "nombre": { "es": "Lista de series populares", "en": "List of popular series" }, "link": "recomendaciones.html#lista" },
+        { "nombre": { "es": "Reseñas y comentarios de usuarios", "en": "User reviews and comments" }, "link": "recomendaciones.html#reseñas" },
+        { "nombre": { "es": "Actualizaciones y nuevos lanzamientos", "en": "Updates and new releases" }, "link": "recomendaciones.html#actualizacion" }
+    ],
+    "Foros": [
+        { "nombre": { "es": "Foros para debatir sobre series", "en": "SForums to discuss series" }, "link": "foros.html#foros" },
+        { "nombre": { "es": "Compartir opiniones y teorías", "en": "Sharing opinions and theories" }, "link": "foros.html#compartir" },
+        { "nombre": { "es": "Grupos de fans de series específicas", "en": "Fan groups for specific series" }, "link": "foros.html#fans" },
+        { "nombre": { "es": "Eventos y estrenos en vivo", "en": "Live events and premieres" }, "link": "foros.html#eventos" }
+    ],
+    "Forums": [
+        { "nombre": { "es": "Foros para debatir sobre series", "en": "Forums to discuss series" }, "link": "foros.html#foros" },
+        { "nombre": { "es": "Compartir opiniones y teorías", "en": "Sharing opinions and theories" }, "link": "foros.html#compartir" },
+        { "nombre": { "es": "Grupos de fans de series específicas", "en": "Fan groups for specific series" }, "link": "foros.html#fans" },
+        { "nombre": { "es": "Eventos y estrenos en vivo", "en": "Live events and premieres" }, "link": "foros.html#eventos" }
+    ],
+    "Extras": [
+        { "nombre": { "es": "Listas de reproducción recomendadas", "en": "Recommended playlists" }, "link": "extras.html#listas" },
+        { "nombre": { "es": "Videos sobre análisis de series", "en": "Videos on series analysis" }, "link": "extras.html#videos" },
+        { "nombre": { "es": "Artículos y blogs de crítica", "en": "Criticism articles and blogs" }, "link": "extras.html#articulos" },
+        { "nombre": { "es": "Estadísticas de visualización global", "en": "Global Viewing Statistics" }, "link": "extras.html#estadisticas" }
+    ],
+    "Extra": [
+        { "nombre": { "es": "Listas de reproducción recomendadas", "en": "Recommended playlists" }, "link": "extras.html#listas" },
+        { "nombre": { "es": "Videos sobre análisis de series", "en": "Videos on series analysis" }, "link": "extras.html#videos" },
+        { "nombre": { "es": "Artículos y blogs de crítica", "en": "Criticism articles and blogs" }, "link": "extras.html#articulos" },
+        { "nombre": { "es": "Estadísticas de visualización global", "en": "Global Viewing Statistics" }, "link": "extras.html#estadisticas" }
+    ],
+    "Preguntas Frecuentes": [
+        { "nombre": { "es": "Modificar respuestas", "en": "Modify answers" }, "link": "faq.html#modificar" },
+        { "nombre": { "es": "Privacidad de los datos", "en": "Data privacy" }, "link": "faq.html#privacidad" },
+        { "nombre": { "es": "Consultar más series", "en": "Consult more series" }, "link": "faq.html#consultar" },
+        { "nombre": { "es": "Contactar soporte", "en": "Contact support" }, "link": "faq.html#contactar" }
+    ],
+    "FAQ": [
+        { "nombre": { "es": "Modificar respuestas", "en": "Modify answers" }, "link": "faq.html#modificar" },
+        { "nombre": { "es": "Privacidad de los datos", "en": "Data privacy" }, "link": "faq.html#privacidad" },
+        { "nombre": { "es": "Consultar más series", "en": "Consult more series" }, "link": "faq.html#consultar" },
+        { "nombre": { "es": "Contactar soporte", "en": "Contact support" }, "link": "faq.html#contactar" }
+    ],
+    "Contacto": [
+        { "nombre": { "es": "Formulario de sugerencias", "en": "Modify answers" }, "link": "contacto.html#formulario" },
+        { "nombre": { "es": "Redes sociales", "en": "Data privacy" }, "link": "contacto.html#redesSociales" },
+        { "nombre": { "es": "Opiniones adicionales ", "en": "Consult more series" }, "link": "contacto.html#opiniones" },
+        { "nombre": { "es": "Contacto con el equipo", "en": "Contact support" }, "link": "contacto.html#cliente" }
+    ],
+    "Contact": [
+        { "nombre": { "es": "Formulario de sugerencias", "en": "Modify answers" }, "link": "contacto.html#formulario" },
+        { "nombre": { "es": "Redes sociales", "en": "Data privacy" }, "link": "contacto.html#redesSociales" },
+        { "nombre": { "es": "Opiniones adicionales ", "en": "Consult more series" }, "link": "contacto.html#opiniones" },
+        { "nombre": { "es": "Contacto con el equipo", "en": "Contact support" }, "link": "contacto.html#cliente" }
+    ]
+}
+ 

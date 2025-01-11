@@ -1,0 +1,1182 @@
+<traslations>
+    <!-- ***************** TRADUCCION DEL INDEX ***************** -->
+    <key name="titulo">
+    <es>Series populares</es>
+    <en>Popular series</en>
+    </key>
+    <key name="disfruta1">
+    <es>¡Disfruta de todas las series populares!</es>
+    <en>Enjoy all the popular series!</en>
+    </key>
+
+    <key name="disfruta2">
+    <es>¡Disfruta de todas las series populares!</es>
+    <en>Enjoy all the popular series!</en>
+    </key>
+
+    <key name="disfruta3">
+    <es>¡Disfruta de todas las series populares!</es>
+    <en>Enjoy all the popular series!</en>
+    </key>
+
+    <key name="disfruta4">
+    <es>¡Disfruta de todas las series populares!</es>
+    <en>Enjoy all the popular series!</en>
+    </key>
+
+  <key name="beneficio1">
+    <es>¿Por qué usar nuestra plataforma?</es>
+    <en>Why use our platform?</en>
+  </key>
+
+  <key name="beneficio2">
+    <es>La mejor herramienta para opinar de tus series favoritas.</es>
+    <en>The best tool to give your opinion on your favorite series.</en>
+  </key>
+
+  <key name="beneficio3">
+    <es>Ranking de series</es>
+    <en>Series ranking</en>
+  </key>
+  <key name="beneficio5">
+    <es>Aqui tenemos las mejores series mas actualizadas.</es>
+    <en>Here we have the best and most up to date series.</en>
+  </key>
+  <key name="beneficio4">
+    <es>Plataformas de series</es>
+    <en>Series platforms</en>
+  </key>
+  <key name="beneficio6">
+    <es>Te recomendamoslas mejores plataformas para disfrutar de tus series favoritas.</es>
+    <en>We recommend the best platforms to enjoy your favorite series.</en>
+  </key>
+  <key name="beneficio7">
+    <es>Variedad de series</es>
+    <en>Variety of series</en>
+  </key>
+  <key name="beneficio8">
+    <es>series desde la mas antigua hasta las mas actualizadas.</es>
+    <en>series from the oldest to the most recent.</en>
+  </key>
+  <key name="accion1">
+    <es>¿Listo para empezar?</es>
+    <en>Ready to get started?</en>
+  </key>
+  <key name="accion2">
+    <es>Comienza a opinar tus series favoritas.</es>
+    <en>Start reviewing your favorite series.</en>
+  </key>
+  <key name="accion3">
+    <es>Empezar</es>
+    <en>Start</en>
+  </key>
+  <key name="footer">
+    <es> 2025 Derechos reservados: A. Guillermo Llavera A.</es>
+    <en> 2025 All rights reserved: A. Guillermo Llavera A.</en>
+  </key>
+  <!-- ***************** FIN DEL INDEX ***************** -->
+
+  <!-- ***************** TRADUCCION DEL INICIO ***************** -->
+    <key name="iniciotitulo">
+    <es>Inicio</es>
+    <en>Star</en>
+    </key>
+    <key name="submenu1">
+    <es>Descripción del Proyecto</es>
+    <en>Project Description</en>
+    </key>
+    <key name="submenu2">
+    <es>Importancia</es>
+    <en>Importance</en>
+    </key>
+    <key name="submenu3">
+    <es>Beneficios</es>
+    <en>Benefits</en>
+    </key>
+    <key name="submenu4">
+    <es>Preguntas Frecuentes</es>
+    <en>Frequently Asked Questions</en>
+    </key>
+    <key name="iniinicio">
+    <es>BIENVENIDO AL MENU INICIO</es>
+    <en>WELCOME TO THE HOME MENU</en>
+    </key>
+    <key name="inidescripcion1">
+    <es>Descripción</es>
+    <en>Descripción</en>
+    </key>
+    <key name="inidescripcion2">
+    <es>Tener una página web de opiniones sobre series te permite compartir tu pasión por la televisión con una comunidad de fans, construir una plataforma para analizar tus series favoritas, y desarrollar tus habilidades de escritura y crítica. Podrás descubrir nuevas series, interactuar con otros espectadores, y hasta convertirte en una referencia en el mundo de las series. Además, tendrás la libertad creativa de escribir sobre lo que quieras y de la manera que quieras, y podrás llegar a un público global. ¡Es una oportunidad única para conectar con otros amantes de la televisión y compartir tu conocimiento y entusiasmo!</es>
+    <en>Having a TV review website allows you to share your passion for TV with a community of fans, build a platform to discuss your favorite shows, and develop your writing and review skills. You'll be able to discover new shows, interact with other viewers, and even become a reference in the world of TV. Plus, you'll have the creative freedom to write about whatever you want, however you want, and you'll be able to reach a global audience. It's a unique opportunity to connect with other TV lovers and share your knowledge and enthusiasm!</en>
+    </key>
+    <key name="iniimportancia1">
+    <es>Importancia de Conocer Opiniones sobre Series</es>
+    <en>Importance of Knowing Opinions on Series</en>
+    </key>
+    <key name="iniimportancia2">
+    <es>Las opiniones de los espectadores ayudan a las plataformas de contenido a mejorar su catálogo y ofrecen a los usuarios la oportunidad de descubrir nuevas series que se ajusten a sus intereses. Además, promueven el diálogo y la interacción entre personas con gustos similares.</es>
+    <en>Viewer reviews help content platforms improve their catalogue and offer users the opportunity to discover new series that fit their interests. They also promote dialogue and interaction between people with similar tastes.</en>
+    </key>
+    <key name="inibeneficios1">
+    <es>Beneficios de Participar</es>
+    <en>Benefits of Participating</en>
+    </key>
+    <key name="inibeneficios2">
+    <es>Descubrir nuevas series: Al interactuar con otros usuarios, tendrás acceso a recomendaciones personalizadas y podrás descubrir series que quizás no conocías. La comunidad te ayudará a ampliar tu horizonte televisivo.</es>
+    <en>Discover new series: By interacting with other users, you will have access to personalized recommendations and you will be able to discover series that you may not have known about. The community will help you to broaden your television horizon.</en>
+    </key>
+    <key name="inibeneficios3">
+    <es>Compartir tu pasión: Las plataformas de opinión son el lugar perfecto para conectar con personas que comparten tu amor por las series. Podrás discutir tus series favoritas, analizar personajes, teorías y mucho más.</es>
+    <en>Share your passion: Opinion platforms are the perfect place to connect with people who share your love for series. You can discuss your favorite series, analyze characters, theories and much more.</en>
+    </key>
+    <key name="inibeneficios4">
+    <es>Influir en la comunidad: Tus opiniones pueden influir en las decisiones de otros usuarios. Si eres un fanático de una serie en particular, puedes ayudar a que otros la descubran y la valoren.</es>
+    <en>Influencing the community: Your opinions can influence other users' decisions. If you're a fan of a particular series, you can help others discover and appreciate it.</en>
+    </key>
+    <key name="inibeneficios5">
+    <es>Mantenerte actualizado: Las plataformas de opinión suelen ser las primeras en recibir noticias y novedades sobre las series. Estarás al tanto de los últimos estrenos, cancelaciones y todo lo relacionado con el mundo televisivo.</es>
+    <en>Staying up to date: Opinion platforms are usually the first to receive news and updates about series. You will be aware of the latest releases, cancellations and everything related to the television world.</en>
+    </key>
+    <key name="inibeneficios6">
+    <es>Desarrollar tus habilidades de escritura y comunicación: Al escribir reseñas y comentarios, mejorarás tu capacidad para expresar tus ideas de forma clara y concisa. Además, podrás desarrollar un estilo de escritura más personal y atractivo.</es>
+    <en>Develop your writing and communication skills: By writing reviews and comments, you will improve your ability to express your ideas clearly and concisely. In addition, you will be able to develop a more personal and engaging writing style.</en>
+    </key>
+    <key name="inipregunta1">
+    <es>Preguntas Frecuentes</es>
+    <en>Frequently Asked Questions</en>
+    </key>
+    <key name="inipregunta2">
+    <es>1. ¿Qué tipo de series se incluyen en el análisis?</es>
+    <en>1. What type of series are included in the analysis?</en>
+    </key>
+    <key name="inipregunta3">
+    <es>Todas las series disponibles en plataformas de streaming como Netflix, HBO, Disney+, entre otras.</es>
+    <en>All series available on streaming platforms such as Netflix, HBO, Disney+, among others.</en>
+    </key>
+    <key name="inipregunta4">
+    <es>2. ¿Es obligatorio participar en las encuestas?</es>
+    <en>2. Is it mandatory to participate in the surveys?</en>
+    </key>
+    <key name="inipregunta5">
+    <es>No, pero tu participación ayudará a mejorar las recomendaciones y análisis del proyecto.</es>
+    <en>No, but your participation will help improve the project's recommendations and analysis.</en>
+    </key>
+    <key name="inipregunta6">
+    <es>3. ¿Dónde puedo ver los resultados?</es>
+    <en>3. Where can I see the results?</en>
+    </key>
+    <key name="inipregunta7">
+    <es>Los resultados se publican en la sección "Resultados" de nuestro sitio web.</es>
+    <en>The results are published in the "Results" section of our website.</en>
+    </key>
+    <key name="inifooter">
+    <es>2025. Derechos reservados A. Guillermo Llavera A.</es>
+    <en>2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+    <!-- ***************** FIN DEL INICIO ***************** -->
+
+  <!-- ***************** TRADUCCION SUB-MENU ENCUESTA ***************** -->
+    <key name="entitulo">
+    <es>Encuesta de Actividades</es>
+    <en>Activities Survey</en>
+    </key>
+    <key name="ensubmenu1">
+    <es>Selección de series populares</es>
+    <en>Selection of popular series</en>
+    </key>
+    <key name="ensubmenu2">
+    <es>Evaluación</es>
+    <en>Evaluation</en>
+    </key>
+    <key name="ensubmenu3">
+    <es>Preferencias de plataformas</es>
+    <en>Platform preferences</en>
+    </key>
+    <key name="ensubmenu4">
+    <es>Confirmar Respuestas</es>
+    <en>Confirm Answers</en>
+    </key>
+    <key name="ensubmenu4">
+    <es>Confirmar Respuestas</es>
+    <en>Confirm Answers</en>
+    </key>
+    <key name="encuesta">
+    <es>REALIZA TU ENCUESTA</es>
+    <en>TAKE YOUR SURVEY</en>
+    </key>
+    <key name="enseleccion1">
+    <es>Selecciona tus series populares</es>
+    <en>Select your popular series</en>
+    </key>
+    <key name="enevaluacion1">
+    <es>Evaluación de Series</es>
+    <en>Series Evaluation</en>
+    </key>
+    <key name="enevaluacion2">
+    <es>1. ¿Qué género prefieres en las series?</es>
+    <en>1. What genre do you prefer in series?</en>
+    </key>
+    <key name="enevaluacion3">
+    <es>Acción</es>
+    <en>Action</en>
+    </key>     
+     <key name="enevaluacion4">
+    <es>Comedia</es>
+    <en>Comedy</en>
+    </key>
+    <key name="enevaluacion5">
+    <es>Drama</es>
+    <en>Drama</en>
+    </key>
+    <key name="enevaluacion6">
+    <es>Fantasía</es>
+    <en>Fancy</en>
+    </key>
+    <key name="enevaluacion7">
+    <es>2. ¿Qué tipo de trama te atrae más?</es>
+    <en>2. What type of plot attracts you the most?</en>
+    </key>
+    <key name="enevaluacion8">
+    <es>Intrigante</es>
+    <en>Schemer</en>
+    </key>
+    <key name="enevaluacion9">
+    <es>Narrativa</es>
+    <en>Narrative</en>
+    </key>
+    <key name="enevaluacion10">
+    <es>Emocional</es>
+    <en>Emotional</en>
+    </key>
+    <key name="enevaluacion11">
+    <es>Cómica</es>
+    <en>Comedienne</en>
+    </key>
+    <key name="enevaluacion12">
+    <es>3. ¿Qué tipo de personajes prefieres?</es>
+    <en>3. What kind of characters do you prefer?</en>
+    </key>
+    <key name="enevaluacion13">
+    <es>Heroe</es>
+    <en>Hero</en>
+    </key>
+    <key name="enevaluacion14">
+    <es>Antihéroe</es>
+    <en>Antihero</en>
+    </key>
+    <key name="enevaluacion15">
+    <es>Villano</es>
+    <en>Villain</en>
+    </key>
+    <key name="enevaluacion16">
+    <es>Secundario destacado</es>
+    <en>Outstanding secondary school</en>
+    </key>
+    <key name="enfrecuencia1">
+    <es>Preferencia de Plataformas</es>
+    <en>Platform Preference</en>
+    </key>
+    <key name="enfrecuencia2">
+    <es>En qué plataforma mira más seguido sus series:</es>
+    <en>On which platform he watches his series most often:</en>
+    </key>
+    <key name="enfrecuencia3">
+    <es>Describe brevemente por qué te gustan estas actividades:</es>
+    <en>Briefly describe why you like these activities:</en>
+    </key>
+    <key name="enconfirmacion1">
+    <es>Confirmación de Respuestas</es>
+    <en>Confirmation of Responses</en>
+    </key>
+    <key name="enconfirmacion2">
+    <es>Confirmar Respuestas</es>
+    <en>Confirm Answers</en>
+    </key>
+    <key name="enconfirmacion3">
+    <es>Tus respuestas han sido guardadas correctamente.</es>
+    <en>Your answers have been saved correctly.</en>
+    </key>
+    <key name="enfooter">
+    <es>2025. Derechos reservados A. Guillermo Llavera A.</es>
+    <en>2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+     <!-- ***************** FIN DE LA ENCUESTA ***************** -->
+
+  <!-- ***************** TRADUCCION SUB-MENU RESULTADOS ***************** -->
+    <key name="resutitulo">
+    <es>Resultados</es>
+    <en>Results</en>
+    </key>
+    <key name="resubienvenido">
+    <es>BIENVENIDO A NUESTROS RESULTADOS</es>
+    <en>WELCOME TO OUR RESULTS</en>
+    </key>
+    <key name="resumenu1">
+    <es>Estadísticas</es>
+    <en>Statistics</en>
+    </key>
+    
+    <key name="resumenu2">
+    <es>Comparación</es>
+    <en>Comparison</en>
+    </key>    
+    <key name="resumenu3">
+    <es>Gráficos</es>
+    <en>Graphics</en>
+    </key>
+    <key name="resumenu4">
+    <es>Analisis</es>
+    <en>Analysis</en>
+    </key>
+    <resources>
+    <key name="resuestadistica1">
+        <es>Estadísticas Generales</es>
+        <en>General Statistics</en>
+    </key>
+    <key name="resuestadistica2">
+        <es>Comedia: <span class="badge bg-primary">35%</span> - Popular por su capacidad para aliviar el estrés.</es>
+        <en>Comedy: <span class="badge bg-primary">35%</span> - Popular for its ability to relieve stress.</en>
+    </key>
+    <key name="resuestadistica3">
+        <es>Drama: <span class="badge bg-secondary">30%</span> - Preferido por quienes buscan historias profundas y emocionales.</es>
+        <en>Drama: <span class="badge bg-secondary">30%</span> - Preferred by those who seek deep and emotional stories.</en>
+    </key>
+    <key name="resuestadistica4">
+        <es>Ciencia ficción: <span class="badge bg-success">20%</span> - Atrae a los amantes de mundos imaginativos.</es>
+        <en>Science fiction: <span class="badge bg-success">20%</span> - Attracts lovers of imaginative worlds.</en>
+    </key>
+    <key name="resuestadistica5">
+        <es>Otros: <span class="badge bg-danger">15%</span> - Incluye géneros como documentales o antologías.</es>
+        <en>Other: <span class="badge bg-danger">15%</span> - Includes genres like documentaries or anthologies.</en>
+    </key>
+    </resources>
+    <key name="resucomparacion1">
+        <es>Comparación de Gustos por Regiones</es>
+        <en>Comparison of Tastes by Region</en>
+    </key>
+    <key name="resucomparacion2">
+        <es>América del Norte</es>
+        <en>North America</en>
+    </key>
+    <key name="resucomparacion3">
+        <es>45% Comedia</es>
+        <en>45% Comedy</en>
+    </key>
+    <key name="resucomparacion4">
+        <es>Europa</es>
+        <en>Europe</en>
+    </key>
+    <key name="resucomparacion5">
+        <es>40% Drama</es>
+        <en>40% Drama</en>
+    </key>
+    <key name="resucomparacion6">
+        <es>Asia</es>
+        <en>Asia</en>
+    </key>
+    <key name="resucomparacion7">
+        <es>35% Ciencia Ficción</es>
+        <en>35% Science Fiction</en>
+    </key>
+    <key name="resugraficos1">
+        <es>Gráficos Interactivos de Preferencia</es>
+        <en>Interactive Preference Charts</en>
+    </key>
+    <key name="resugraficos2">
+        <es>Este gráfico muestra la evolución de las preferencias de series por género a lo largo de los últimos meses.</es>
+        <en>This graph shows the evolution of series preferences by genre over the last few months</en>
+    </key>
+    <key name="resuanalisis1">
+        <es>Análisis Detallado por Género</es>
+        <en>Detailed Analysis by Gender</en>
+    </key>
+    <key name="resuanalisis2">
+        <es>Popularidad por Género</es>
+        <en>Popularity by Genre</en>
+    </key>
+    <key name="resuanalisis3">
+        <es>Preferencias por Edad</es>
+        <en>Age Preferences</en>
+    </key>
+    <key name="resufoorter">
+    <es>2025. Derechos reservados A. Guillermo Llavera A.</es>
+    <en>2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+       <!-- ***************** FIN DE LA RESULTADOS ***************** -->
+
+  <!-- ***************** TRADUCCION SUB-MENU RECOMENDACIONES ***************** -->
+    <key name="recotitulo">
+    <es>Recomendaciones</es>
+    <en>Recommendations</en>
+    </key>
+    <key name="recomenu1">
+    <es>Sugerencias</es>
+    <en>Suggestions</en>
+    </key>
+    <key name="recomenu2">
+    <es>Lista de series</es>
+    <en>Series list</en>
+    </key>
+    <key name="recomenu3">
+    <es>Reseñas y comentarios</es>
+    <en>Reviews and comments</en>
+    </key>
+    <key name="recomenu4">
+    <es>Actualizaciones</es>
+    <en>Updates</en>
+    </key>
+    <key name="recoimg1">
+    <es>REALIZA TU ENCUESTA</es>
+    <en>TAKE YOUR SURVEY</en>
+    </key>
+    <key name="recosugerencia1">
+    <es>Sugerencias de Series Según Gustos</es>
+    <en>Series Suggestions According to Tastes</en>
+    </key>
+    <key name="recosugerencia2">
+    <es>Acción</es>
+    <en>Action</en>
+    </key>
+    <key name="recosugerencia3">
+    <es>Comedia</es>
+    <en>Comedy</en>
+    </key>
+    <key name="recosugerencia4">
+    <es>Draman</es>
+    <en>Drama</en>
+    </key>
+    <key name="recosugerencia5">
+    <es>Fantasía</es>
+    <en>Fancy</en>
+    </key>
+    <key name="recosugerencia6">
+    <es>Una serie llena de acción y giros inesperados. Perfecta para amantes del suspenso y adrenalina.</es>
+    <en>A series full of action and unexpected twists. Perfect for lovers of suspense and adrenaline.</en>
+    </key>
+    <key name="recosugerencia7">
+    <es>Aventuras intergalácticas con intensas escenas de acción y un toque de misterio.</es>
+    <en>Intergalactic adventures with intense action scenes and a touch of mystery.</en>
+    </key>
+    <key name="recosugerencia8">
+    <es>La serie explora la rivalidad entre Johnny y Daniel LaRusso décadas después de su famoso torneo de karate, mientras ambos intentan superar sus pasados y encontrar la redención.</es>
+    <en>The series explores the rivalry between Johnny and Daniel LaRusso decades after their famous karate tournament, as both try to overcome their pasts and find redemption.</en>
+    </key>
+    <key name="recosugerencia9">
+    <es>Comedia en su máxima expresión con personajes inolvidables y situaciones hilarantes.</es>
+    <en>Comedy at its finest with unforgettable characters and hilarious situations.</en>
+    </key>
+    <key name="recosugerencia10">
+    <es>Risas garantizadas con un humor inteligente y personajes entrañables.</es>
+    <en>Guaranteed laughs with clever humour and endearing characters.</en>
+    </key>
+    <key name="recosugerencia11">
+    <es>Risas garantizadas con un humor inteligente y personajes entrañables.</es>
+    <en>Guaranteed laughs with clever humor and endearing characters.</en>
+    </key>
+    <key name="recosugerencia12">
+    <es>Intrigas políticas, luchas de poder y emociones intensas en cada episodio.</es>
+    <en>Political intrigue, power struggles and intense emotions in every episode.</en>
+    </key>
+    <key name="recosugerencia13">
+    <es>Un drama histórico que explora las complejidades de la monarquía británica.</es>
+    <en>A historical drama that explores the complexities of the British monarchy.</en>
+    </key>
+    <key name="recosugerencia14">
+    <es>Un profesor de química con cáncer es diagnosticado y decide usar sus conocimientos para producir metanfetamina y asegurar el futuro financiero de su familia.</es>
+    <en>A chemistry teacher with cancer is diagnosed and decides to use his knowledge to produce methamphetamine and secure his family's financial future.</en>
+    </key>
+    <key name="recosugerencia15">
+    <es>Misterio sobrenatural y aventuras épicas en un entorno ochentero único.</es>
+    <en>Supernatural mystery and epic adventures in a unique 80s setting.</en>
+    </key>
+    <key name="recosugerencia16">
+    <es>Un mundo lleno de magia, monstruos y personajes fascinantes.</es>
+    <en>A world full of magic, monsters and fascinating characters.</en>
+    </key>
+    <key name="recosugerencia17">
+    <es>Es una serie con una trama compleja y filosófica, que explora temas como el libre albedrío y la naturaleza del bien y el mal.</es>
+    <en>It is a series with a complex and philosophical plot, which explores themes such as free will and the nature of good and evil.</en>
+    </key>
+    <key name="recolista1">
+    <es>Lista de Series Populares</es>
+    <en>List of Popular Series</en>
+    </key>
+    <key name="recolista2">
+    <es>Aventura épica en el universo de Star Wars, llena de acción y misterio.</es>
+    <en>Epic adventure in the Star Wars universe, full of action and mystery.</en>
+    </key>
+    <key name="recolista3">
+    <es>Un profesor de química convertido en fabricante de drogas, en una lucha por la supervivencia.</es>
+    <en>A chemistry teacher turned drug manufacturer, in a fight for survival.</en>
+    </key>
+    <key name="recolista4">
+    <es>La historia de la reina Isabel II y los desafíos de la monarquía británica.</es>
+    <en>The story of Queen Elizabeth II and the challenges of the British monarchy</en>
+    </key>
+    <key name="recolista4">
+    <es>La historia de la reina Isabel II y los desafíos de la monarquía británica.</es>
+    <en>The story of Queen Elizabeth II and the challenges of the British monarchy</en>
+    </key>
+    <key name="recolista5">
+    <es>Una guerra por el Trono de Hierro entre poderosas casas en un mundo medieval.</es>
+    <en>A war for the Iron Throne between powerful houses in a medieval world.</en>
+    </key>
+    <key name="recolista6">
+    <es>Una comedia sobre la vida diaria en una oficina de Scranton, llena de personajes excéntricos.</es>
+    <en>A comedy about daily life in a Scranton office, filled with eccentric characters.</en>
+    </key>
+    <key name="recolista7">
+    <es>Una serie de comedia centrada en una comisaría de policía llena de personajes hilarantes.</es>
+    <en>A comedy series centered on a police station filled with hilarious characters.</en>
+    </key>
+    <key name="recoreseña1">
+    <es>Reseñas y Comentarios de Usuarios</es>
+    <en>User Reviews and Comments</en>
+    </key>
+    <key name="recoreseña2">
+    <es>Una serie impresionante que lleva la experiencia de Star Wars a un nivel completamente nuevo. Un viaje épico de aventuras y momentos inolvidables.</es>
+    <en>A stunning series that takes the Star Wars experience to a whole new level. An epic journey of adventure and unforgettable moments.</en>
+    </key>
+    <key name="recoreseña3">
+    <es>Agregar Comentario</es>
+    <en>Add Comment</en>
+    </key>
+    <key name="recoreseña4">
+    <es>Un relato fascinante de transformación personal y decisiones que cambian la vida. La actuación de Bryan Cranston es sencillamente excepcional.</es>
+    <en>A fascinating tale of personal transformation and life-changing decisions. Bryan Cranston's performance is simply exceptional.</en>
+    </key>
+    <key name="recoactualizacion1">
+    <es>Actualizaciones y Nuevos Lanzamientos de Series</es>
+    <en>Updates and New Series Releases</en>
+    </key>
+    <key name="recoactualizacion2">
+    <es>Nuevos Lanzamientos</es>
+    <en>New Releases</en>
+    </key>
+    <key name="recoactualizacion3">
+    <es>Actualizaciones</es>
+    <en>Updates</en>
+    </key>
+    <key name="recoactualizacion4">
+    <es>Loki - Temporada 2</es>
+    <en>Loki - Season 2</en>
+    </key>
+    <key name="recoactualizacion5">
+    <es>La continuación de las travesuras de Loki, ahora con más aventuras en múltiples realidades. ¡No te lo puedes perder!</es>
+    <en>The continuation of Loki's antics, now with more adventures in multiple realities. Don't miss it!</en>
+    </key>
+    <key name="recoactualizacion6">
+    <es>Fecha de Lanzamiento: 1 de febrero, 2025</es>
+    <en>Release Date: February 1, 2025</en>
+    </key>
+    <key name="recoactualizacion7">
+    <es>Stranger Things - Temporada 5</es>
+    <en>Stranger Things - Season 5</en>
+    </key>
+    <key name="recoactualizacion8">
+    <es>¡La última temporada de Stranger Things está aquí! Acompaña a los amigos mientras enfrentan nuevos horrores en el Mundo del Revés.</es>
+    <en>The final season of Stranger Things is here! Join the friends as they face new horrors in the Upside Down.</en>
+    </key>
+    <key name="recoactualizacion9">
+    <es>Fecha de Lanzamiento: 15 de febrero, 2025</es>
+    <en>Release Date: February 15, 2025</en>
+    </key>
+    <key name="recoactualizacion10">
+    <es>The Witcher - Nueva Temporada</es>
+    <en>The Witcher - New Season</en>
+    </key>
+    <key name="recoactualizacion11">
+    <es>La serie más popular de fantasía regresa con una nueva temporada llena de magia, acción y traiciones. ¡La espera ha terminado!</es>
+    <en>The most popular fantasy series returns with a new season full of magic, action and betrayal. The wait is over!</en>
+    </key>
+    <key name="recoactualizacion12">
+    <es>Actualización: 1 de enero, 2025</es>
+    <en>Update: January 1, 2025</en>
+    </key>
+    <key name="recoactualizacion13">
+    <es>The Crown - Nueva Temporada</es>
+    <en>The Crown - New Season</en>
+    </key>
+    <key name="recoactualizacion14">
+    <es>La historia de la monarquía británica continúa con nuevos episodios sobre el reinado de la Reina Isabel II.</es>
+    <en>The history of the British monarchy continues with new episodes about the reign of Queen Elizabeth II.</en>
+    </key>
+    <key name="recoactualizacion15">
+    <es>Actualización: 20 de enero, 2025</es>
+    <en>Update: January 20, 2025</en>
+    </key>
+    <key name="footer">
+    <es> 2025 Derechos reservados: A. Guillermo Llavera A.</es>
+    <en> 2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+    <!-- ***************** FIN DE LAS RECOMENDACIONES ***************** -->
+
+    <!-- ***************** TRADUCCION SUB-MENU FOROS ***************** -->
+    <key name="forotitulo">
+    <es>Foros</es>
+    <en>Forums</en>
+    </key>
+    <key name="foromenu1">
+    <es>Foros para debatir sobre series</es>
+    <en>Forums to discuss series</en>
+    </key>
+    <key name="foromenu2">
+    <es>Compartir opiniones y teorías</es>
+    <en>Sharing opinions and theories</en>
+    </key>
+    <key name="foromenu3">
+    <es>Grupos de fans de series específicas</es>
+    <en>Fan groups for specific series</en>
+    </key>
+    <key name="foromenu4">
+    <es>Eventos y estrenos en vivo</es>
+    <en>Live events and premieres</en>
+    </key>
+    <key name="fororealiza">
+    <es>REALIZA TU FORO</es>
+    <en>CREATE YOUR FORUM</en>
+    </key>
+    <key name="foroforos1">
+    <es>Foros para Debatir sobre Series</es>
+    <en>Forums to Discuss Series</en>
+    </key>
+    <key name="foroforos2">
+    <es>Únete a la conversación y comparte tus opiniones sobre tus series favoritas</es>
+    <en>Join the conversation and share your thoughts on your favorite shows.</en>
+    </key>
+    <key name="foroforos3">
+    <es>Selecciona un Tema</es>
+    <en>Select a Theme</en>
+    </key>
+    <key name="forocompartir1">
+    <es>Compartir Opiniones y Teorías sobre Series</es>
+    <en>Share Opinions and Theories about Series</en>
+    </key>
+    <key name="forocompartir2">
+    <es>Únete a la discusión y comparte tus pensamientos sobre las series que amas.</es>
+    <en>Join the discussion and share your thoughts on the series you love.</en>
+    </key>
+    <key name="forocompartir3">
+    <es>Elige una serie:</es>
+    <en>Choose a series:</en>
+    </key>
+    <key name="forocompartir4">
+    <es>Selecciona una serie</es>
+    <en>Select a series</en>
+    </key>
+    <key name="forocompartir5">
+    <es>Cargar Comentarios</es>
+    <en>Load Comments</en>
+    </key>
+    <key name="forocompartir6">
+    <es>Escribe tu opinión:</es>
+    <en>Write your opinion:</en>
+    </key>
+    <key name="forocompartir7">
+    <es>Enviar Opinión</es>
+    <en>Send Opinion</en>
+    </key>
+    <key name="forofans1">
+    <es>Grupo de Fans</es>
+    <en>Fan Group</en>
+    </key>
+    <key name="forofans2">
+    <es>Ver mas..</es>
+    <en>See more..</en>
+    </key>
+    <key name="forofans3">
+    <es>Grupo de WhatsApp</es>
+    <en>WhatsApp group</en>
+    </key>
+    <key name="forofans4">
+    <es>Grupo de Facebook</es>
+    <en>Facebook group</en>
+    </key>
+    <key name="forofans5">
+    <es>Grupo de Telegram</es>
+    <en>Telegram group</en>
+    </key>
+    <key name="foroevento1">
+    <es>Explora Más Sobre Series</es>
+    <en>Explore More About Series</en>
+    </key>
+    <key name="foroevento2">
+    <es>Eventos de Series</es>
+    <en>Series Events</en>
+    </key>
+    <key name="foroevento3">
+    <es>Estrenos en Vivo</es>
+    <en>Live Premieres</en>
+    </key>
+    <key name="foroevento4">
+    <es>Estrenos de Series</es>
+    <en>Series Events</en>
+    </key>
+    <key name="foroevento5">
+    <es>Aun no tenemos eventos de series disponibles.</es>
+    <en>We do not have any series events available yet.</en>
+    </key>
+    <key name="foroevento6">
+    <es>Estrenos en Vivo</es>
+    <en>Live Premieres</en>
+    </key>
+    <key name="foroevento7">
+    <es>Aun no tenemos eventos de estrenos en vivo disponibles.</es>
+    <en>We do not have any live premiere events available yet.</en>
+    </key>
+    <key name="forofooter">
+    <es> 2025 Derechos reservados: A. Guillermo Llavera A.</es>
+    <en> 2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+  <!-- ***************** FIN DE LOS FOROS ***************** -->
+
+    <!-- ***************** TRADUCCION SUB-MENU EXTRAS ***************** -->
+    <key name="extitulo">
+    <es>Extras </es>
+    <en>Extra</en>
+    </key>
+    <key name="exmenu1">
+    <es>Listas de reproducción recomendadas</es>
+    <en>Recommended playlists</en>
+    </key>
+    <key name="exmenu2">
+    <es>Videos sobre análisis de series</es>
+    <en>Videos on series analysis</en>
+    </key>
+    <key name="exmenu3">
+    <es>Artículos y blogs de crítica </es>
+    <en>Criticism articles and blogs</en>
+    </key>
+    <key name="exmenu4">
+    <es>Estadísticas de visualización global</es>
+    <en>Global Viewing Statistics</en>
+    </key>
+    <key name="exbienvenida">
+    <es>BIENVENIDO A NUESTRO MENU DE EXTRAS</es>
+    <en>WELCOME TO OUR EXTRAS MENU</en>
+    </key>
+    <key name="exlsitas1">
+    <es>🎥 Listas de Reproducción Recomendadas</es>
+    <en>🎥 Recommended Playlists</en>
+    </key>
+    <key name="exlsitas2">
+    <es>Explora nuestras listas cuidadosamente seleccionadas para encontrar tus próximas series favoritas. Desde risas hasta aventuras intergalácticas, ¡tenemos algo para todos!</es>
+    <en>Browse our carefully curated lists to find your next favorite series. From laughs to intergalactic adventures, we have something for everyone!</en>
+    </key>
+    <key name="exlsitas3">
+    <es>🌟 Mejores Series de Comedia</es>
+    <en>🌟 Best Comedy Series</en>
+    </key>
+    <key name="exlsitas4">
+    <es>Ríe a carcajadas con nuestras selecciones de comedias imperdibles, llenas de humor y situaciones inesperadas.</es>
+    <en>Laugh out loud at our selection of must-see comedies, full of humor and unexpected situations.</en>
+    </key>
+    <key name="exlsitas5">
+    <es>Ver Lista</es>
+    <en>View List</en>
+    </key>
+    <key name="exlsitas6">
+    <es>🎭 Series Dramáticas Imperdibles</es>
+    <en>🎭 Must-See Drama Series</en>
+    </key>
+    <key name="exlsitas7">
+    <es>Descubre historias conmovedoras que exploran emociones humanas profundas y relaciones complejas.</es>
+    <en>Discover moving stories that explore deep human emotions and complex relationships.</en>
+    </key>
+    <key name="exlsitas8">
+    <es>Ver Lista</es>
+    <en>View List</en>
+    </key>
+    <key name="exlsitas9">
+    <es>🚀 Las Mejores Series de Ciencia Ficción</es>
+    <en>🚀 The Best Science Fiction Series</en>
+    </key>
+    <key name="exlsitas10">
+    <es>Explora universos futuristas llenos de tecnología avanzada, dilemas éticos y mundos fascinantes.</es>
+    <en>Explore futuristic universes filled with advanced technology, ethical dilemmas and fascinating worlds.</en>
+    </key>
+    <key name="exlsitas11">
+    <es>Ver Lista</es>
+    <en>View List</en>
+    </key>
+    <key name="exvideos1">
+    <es>Videos sobre Análisis de Series</es>
+    <en>Videos about Series Analysis</en>
+    </key>
+    <key name="exvideos2">
+    <es>Explora nuestros videos donde analizamos y discutimos tus series favoritas.</es>
+    <en>Explore our videos where we analyze and discuss your favorite series.</en>
+    </key>
+    <key name="exvideos3">
+    <es>Análisis de Stranger Things</es>
+    <en>Stranger Things Review</en>
+    </key>
+    <key name="exvideos4">
+    <es>Un análisis profundo sobre cómo esta serie captura la esencia de los años 80.</es>
+    <en>An in-depth look at how this series captures the essence of the 80s.</en>
+    </key>
+    <key name="exvideos5">
+    <es>Crítica de The Last of Us</es>
+    <en>The Last of Us Review</en>
+    </key>
+    <key name="exvideos6">
+    <es>Una reflexión sobre la narrativa emocional y su impacto en la audiencia.</es>
+    <en>A reflection on emotional narrative and its impact on the audience.</en>
+    </key>
+    <key name="exvideos7">
+    <es>Desglose de Breaking Bad</es>
+    <en>Breaking Bad Breakdown</en>
+    </key>
+    <key name="exvideos8">
+    <es>Explorando la transformación del personaje principal y su relevancia cultural.</es>
+    <en>Exploring the transformation of the main character and its cultural relevance</en>
+    </key>
+    <key name="exvideos7">
+    <es>Desglose de Breaking Bad</es>
+    <en>Breaking Bad Breakdown</en>
+    </key>
+    <key name="exarticulos1">
+    <es>Artículos y Blogs de Crítica</es>
+    <en>Criticism Articles and Blogs</en>
+    </key>
+    <key name="exarticulos2">
+    <es>Explora nuestras reseñas y análisis sobre las mejores series del momento.</es>
+    <en>Explore our reviews and analysis of the best series of the moment</en>
+    </key>
+    <key name="exarticulos3">
+    <es>Reseña de Stranger Things</es>
+    <en>Stranger Things Review</en>
+    </key>
+    <key name="exarticulos4">
+    <es>Una profunda mirada a cómo esta serie ha capturado la esencia de los años 80</es>
+    <en>An in-depth look at how this series has captured the essence of the 80s</en>
+    </key>
+    <key name="exarticulos5">
+    <es>Leer más</es>
+    <en>Read more</en>
+    </key>
+    <key name="exarticulos6">
+    <es>Análisis de The Last of Us</es>
+    <en>The Last of Us Review</en>
+    </key>
+    <key name="exarticulos7">
+    <es>Un análisis sobre la narrativa emocional y su impacto en la audiencia</es>
+    <en>An analysis of emotional narrative and its impact on the audience</en>
+    </key>
+    <key name="exarticulos8">
+    <es>Leer más</es>
+    <en>Read more</en>
+    </key>
+    <key name="exarticulos9">
+    <es>Crítica a Breaking Bad</es>
+    <en>Breaking Bad Review</en>
+    </key>
+    <key name="exarticulos10">
+    <es>Explorando la transformación del personaje principal y su relevancia cultural.</es>
+    <en>Exploring the transformation of the main character and its cultural relevance.</en>
+    </key>
+    <key name="exarticulos11">
+    <es>Leer más</es>
+    <en>Read more</en>
+    </key>
+    <key name="exestadisticas1">
+    <es>Busca las estadísticas de visualización global de todo el mundo</es>
+    <en>Find global viewing statistics from around the world</en>
+    </key>
+    <key name="exestadisticas2">
+    <es>Buscar Estadísticas</es>
+    <en>Search Statistics</en>
+    </key>
+    <key name="exestadisticas3">
+    <es>Dale click para busacar que series se visualiza en todo el mundo y asi poder disfrutar de todas las series populares. </es>
+    <en> Click here to find out which series are being watched around the world so you can enjoy all the popular series.</en>
+    </key>
+    <key name="exfooter">
+    <es> 2025 Derechos reservados: A. Guillermo Llavera A.</es>
+    <en> 2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+  <!-- ***************** FIN DE LOS EXTRAS ***************** -->
+
+    <!-- ***************** TRADUCCION SUB-MENU FAQ ***************** -->
+    <key name="faqtitulo">
+    <es>Preguntas Frecuentes</es>
+    <en>Frequently Asked Questions</en>
+    </key>
+    <key name="faqmenu1">
+    <es>Modificar respuestas</es>
+    <en>Modify answers</en>
+    </key>
+    <key name="faqmenu2">
+    <es>Privacidad de los datos</es>
+    <en>Data privacy</en>
+    </key>
+    <key name="faqmenu3">
+    <es>Consultar más series</es>
+    <en>Consult more series</en>
+    </key>
+    <key name="faqmenu4">
+    <es>Contactar soporte</es>
+    <en>Contact support</en>
+    </key>
+    <key name="faqbienvenida">
+    <es>REALIZA TUS PREGUNTAS FRECUENTES</es>
+    <en>ASK YOUR FREQUENTLY ASKED QUESTIONS</en>
+    </key>
+    <key name="faqmodificar1">
+    <es>Modificar Respuestas</es>
+    <en>Modify Responses</en>
+    </key>
+    <key name="faqmodificar2">
+    <es>Edita las respuestas directamente desde la tabla para mantener la información actualizada.</es>
+    <en>Edit responses directly from the table to keep information up to date.</en>
+    </key>
+    <key name="faqmodificar3">
+    <es>Respuesta</es>
+    <en>Answer</en>
+    </key>
+    <key name="faqmodificar4">
+    <es>Acciones</es>
+    <en>Actions</en>
+    </key>
+    <key name="faqprivacidad1">
+    <es>Privacidad de los datos</es>
+    <en>Data privacy</en>
+    </key>
+    <key name="faqprivacidad2">
+    <es>En nuestra plataforma, la privacidad de tus datos es una prioridad. Esta sección describe cómo recopilamos, utilizamos y protegemos tu información personal.</es>
+    <en>On our platform, your data privacy is a priority. This section describes how we collect, use and protect your personal information.</en>
+    </key>
+    <key name="faqprivacidad3">
+    <es>1. Recopilación de Datos</es>
+    <en>1. Data Collection</en>
+    </key>
+    <key name="faqprivacidad4">
+    <es>Recopilamos información personal cuando te registras en nuestro sitio, realizas una compra o interactúas con nuestras funcionalidades. Los datos pueden incluir nombre, correo electrónico, preferencias y otra información relevante.</es>
+    <en>We collect personal information when you register on our site, make a purchase or interact with our features. The data may include name, email, preferences and other relevant information.</en>
+    </key>
+    <key name="faqprivacidad5">
+    <es>2. Uso de los Datos</es>
+    <en>2. Use of Data</en>
+    </key>
+    <key name="faqprivacidad6">
+    <es>Utilizamos tus datos para ofrecerte una experiencia personalizada, mejorar nuestros servicios y enviarte información sobre actualizaciones y promociones.</es>
+    <en>We use your data to offer you a personalized experience, improve our services and send you information about updates and promotions.</en>
+    </key>
+    <key name="faqprivacidad7">
+    <es>3. Almacenamiento y Seguridad</es>
+    <en>3. Storage and Security</en>
+    </key>
+    <key name="faqprivacidad8">
+    <es>Tus datos son almacenados en servidores seguros y protegidos mediante medidas de seguridad adecuadas para evitar accesos no autorizados.</es>
+    <en>Your data is stored on secure servers and protected by appropriate security measures to prevent unauthorized access.</en>
+    </key>
+    <key name="faqprivacidad9">
+    <es>4. Derechos del Usuario</es>
+    <en>4. User Rights</en>
+    </key>
+    <key name="faqprivacidad10">
+    <es>Tienes derecho a acceder, corregir o eliminar tus datos personales en cualquier momento. Para ejercer estos derechos, contáctanos a través de nuestro formulario de contacto.</es>
+    <en>You have the right to access, correct or delete your personal data at any time. To exercise these rights, please contact us via our contact form.</en>
+    </key>
+    <key name="faqprivacidad11">
+    <es>5. Cambios en la Política de Privacidad</es>
+    <en>5. Changes to the Privacy Policy</en>
+    </key>
+    <key name="faqprivacidad12">
+    <es>Nos reservamos el derecho a modificar esta política de privacidad en cualquier momento. Te notificaremos sobre cambios significativos a través de nuestro sitio web.</es>
+    <en>We reserve the right to modify this privacy policy at any time. We will notify you of significant changes via our website.</en>
+    </key>
+    <key name="faqprivacidad13">
+    <es>6. Contacto</es>
+    <en>6. Contact</en>
+    </key>
+    <key name="faqprivacidad14">
+    <es>Si tienes preguntas o inquietudes sobre nuestra política de privacidad, no dudes en contactarnos a través del formulario de contacto disponible en nuestro sitio.</es>
+    <en>If you have any questions or concerns about our privacy policy, please feel free to contact us using the contact form available on our site.</en>
+    </key>
+    <key name="faqprivacidad15">
+    <es>Anterior</es>
+    <en>Former</en>
+    </key>
+    <key name="faqprivacidad16">
+    <es>Siguiente</es>
+    <en>Following</en>
+    </key>
+    <key name="faqconsultar1">
+    <es>Consultar Más Series</es>
+    <en>Consult More Series</en>
+    </key>
+    <key name="faqconsultar2">
+    <es>Explora nuestra amplia colección de series y encuentra tus favoritas. Utiliza el buscador o revisa nuestras recomendaciones.</es>
+    <en>Explore our extensive collection of series and find your favourites. Use the search engine or check out our recommendations.</en>
+    </key>
+    <key name="faqconsultar3">
+    <es>Buscar</es>
+    <en>Serch</en>
+    </key>
+    <key name="faqconsultar4">
+    <es>Series Recomendadas</es>
+    <en>Recommended Series</en>
+    </key>
+    <key name="faqconsultar5">
+    <es>Una nostalgia ochentera envuelta en misterios sobrenaturales.</es>
+    <en>An 80s nostalgia wrapped in supernatural mysteries</en>
+    </key>
+    <key name="faqconsultar6">
+    <es>Una conmovedora historia sobre la supervivencia en un mundo post-apocalíptico.</es>
+    <en>A touching story about survival in a post-apocalyptic world</en>
+    </key>
+    <key name="faqconsultar7">
+    <es>Otras Series</es>
+    <en>Other Series</en>
+    </key>
+    <key name="faqconsultar8">
+    <es>Descripción breve de otra serie interesante.</es>
+    <en>Brief description of another interesting series</en>
+    </key>
+    <key name="faqconectar1">
+    <es>Contacta a nuestro soporte</es>
+    <en>Contact our support</en>
+    </key>
+    <key name="faqconectar2">
+    <es>Danos algunos datos y te ofreceremos la mejor solución. Puedes contactar por teléfono, chat, correo electrónico y más.</es>
+    <en>Give us some details and we will offer you the best solution. You can contact us by phone, chat, email and more.</en>
+    </key>
+    <key name="faqconectar3">
+    <es>Llama al soporte: +591 723181825</es>
+    <en>Call support: +591 723181825</en>
+    </key>
+    <key name="faqconectar4">
+    <es>Correo: alvarollavera123.com@gmail.com</es>
+    <en>Mail: alvarollavera123.com@gmail.com</en>
+    </key>
+    <key name="faqconectar5">
+    <es>Chat en vivo: NO disponible 24/7</es>
+    <en>Live chat: NOT available 24/7</en>
+    </key>
+    <key name="faqfooter">
+    <es> 2025 Derechos reservados: A. Guillermo Llavera A.</es>
+    <en> 2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+  <!-- ***************** FIN DE LOS FAQ ***************** -->
+
+    <!-- ***************** TRADUCCION SUB-MENU CONTACTO ***************** -->
+    <key name="contatitulo">
+    <es>Contacto</es>
+    <en>Contact</en>
+    </key>
+    <key name="contamenu1">
+    <es>Formulario de Sugerencias</es>
+    <en>Suggestion Form</en>
+    </key>
+    <key name="contamenu2">
+    <es>Redes Sociales</es>
+    <en>Social networks</en>
+    </key>
+    <key name="contamenu3">
+    <es>Opiniones Adicionales</es>
+    <en>Additional Opinions</en>
+    </key>
+    <key name="contamenu4">
+    <es>Contactactanos</es>
+    <en>Contact us</en>
+    </key>
+    <key name="contabienvenida">
+    <es>Contactactanos</es>
+    <en>Contact us</en>
+    </key>
+    <key name="contaformulario1">
+    <es>Formulario de Sugerencias</es>
+    <en>Suggestion Form</en>
+    </key>    
+    <key name="contaformulario2">
+    <es>¿Tienes alguna duda o consulta? Llena el formulario y nos pondremos en contacto contigo lo antes posible</es>
+    <en>Do you have any questions or queries? Fill out the form and we will get back to you as soon as possible.</en>
+    </key>    
+    <key name="contaformulario3">
+    <es>Nombre</es>
+    <en>Name</en>
+    </key>    
+    <key name="contaformulario4">
+    <es>Correo Electrónico</es>
+    <en>Email</en>
+    </key>    
+    <key name="contaformulario5">
+    <es>Mensaje</es>
+    <en>Msssage</en>
+    </key>    
+    <key name="contaformulario6">
+    <es>Enviar</es>
+    <en>Send</en>
+    </key>    
+    <key name="contaformulario7">
+    <es>Tu mensaje ha sido enviado. Nos comunicaremos contigo lo antes posible.</es>
+    <en>Your message has been sent. We will contact you as soon as possible.</en>
+    </key>    
+    <key name="contredes1">
+    <es>Redes Sociales</es>
+    <en>Social networks</en>
+    </key>
+    <key name="contredes2">
+    <es>Síguenos en nuestras redes sociales y mantente al tanto de nuestras actualizaciones.</es>
+    <en>Follow us on our social networks and stay up to date with our updates.</en>
+    </key>
+    <key name="contaopiniones1">
+    <es>Opiniones adicionales</es>
+    <en>Additional opinions</en>
+    </key>
+    <key name="contaopiniones2">
+    <es>Tu opinión nos ayuda a mejorar. Califica tu experiencia con nosotros:</es>
+    <en>Your opinion helps us improve. Rate your experience with us:</en>
+    </key>
+    <key name="contaopiniones3">
+    <es>😊 Excelente</es>
+    <en>😊 Excellent</en>
+    </key>
+    <key name="contaopiniones4">
+    <es>😐 Buena</es>
+    <en>😐 Good</en>
+    </key>
+    <key name="contaopiniones5">
+    <es>☹ Mala</es>
+    <en>☹ Bad</en>
+    </key>
+    <key name="contacliente1">
+    <es>Contacto con el equipo</es>
+    <en>Contact with the team</en>
+    </key>
+    <key name="contacliente2">
+    <es>Estamos aquí para ayudarte. Contáctanos a través de cualquiera de los siguientes medios:</es>
+    <en>We are here to help you. Contact us through any of the following means:</en>
+    </key>
+    <key name="contacliente3">
+    <es>Telefono</es>
+    <en>Phone</en>
+    </key>
+    <key name="contacliente4">
+    <es>Email:</es>
+    <en>Email:</en>
+    </key>
+    <key name="contacliente5">
+    <es>Horario:</es>
+    <en>Schedule:</en>
+    </key>
+    <key name="contacliente6">
+    <es>Enviar un correo</es>
+    <en>Send an email</en>
+    </key>
+    <key name="contafooter">
+    <es> 2025 Derechos reservados: A. Guillermo Llavera A.</es>
+    <en> 2025 All rights reserved: A. Guillermo Llavera A.</en>
+    </key>
+    <key name="contafooter1">
+    <es> Política de Privacidad</es>
+    <en> Privacy Policy</en>
+    </key>
+    <key name="contafooter2">
+    <es> Términos de Uso</es>
+    <en> Terms of Use</en>
+    </key>
+
+
+</traslations>

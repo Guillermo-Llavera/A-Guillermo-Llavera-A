@@ -1,0 +1,100 @@
+/*------------------------DARLE FORMA A LAS SECCION DE LOS SUB-MENUS-------------------------*/
+section {
+    padding: 50px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+nav a {
+cursor: pointer;
+}
+
+.btn-volver {
+display: block;
+margin: 10px auto;
+text-align: center;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/*-----------------------SECCION DEL MENU MODIFICAR-------------------------------------------*/
+#modificar h1 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  #modificar table {
+    margin-top: 1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  #modificar table th,
+  #modificar table td {
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  #modificar button:hover {
+    transform: scale(1.05);
+  }
+  
+/*-------------------------------------------------------------------------------------------*/
+
+/*-----------------------SECCION DEL MENU PRIVACIDAD-------------------------------------------*/
+.carousel-inner {
+    padding: 20px ;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .carousel-item h2 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  
+  
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*-----------------------SECCION DEL MENU SoPORTE-------------------------------------------*/
+#contactar {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contactar h1 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  #contactar ul li {
+    transition: all 0.3s ease;
+  }
+  
+  #contactar ul li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  #contactar a {
+    transition: transform 0.3s ease;
+  }
+  
+  #contactar a:hover {
+    transform: scale(1.1);
+  }
+  
+
+/*-------------------------------------------------------------------------------------------*/

@@ -1,0 +1,35 @@
+  /* Estilos personalizados para el carrusel */
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background: linear-gradient(90deg, #354352, #9f9aa8);
+  }
+  nav .nav-link {
+    color: rgb(207, 198, 198) !important;
+  }
+  section {
+    padding: 30px 0;
+  }
+  #redesSociales .btn {
+    border-radius: 50px;
+  }
+  #opiniones .btn {
+    font-size: 18px;
+    width: 150px;
+    border-radius: 8px;
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+  }
+  footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #3e6793;
+    text-decoration: underline;
+  }

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="recotitulo">Recomendaciones</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
+  <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+</head>
+<body >
+
+  <nav class="navbar navbar-expand-lg bg-danger navbar-light sticky-top">
+    <div class="container-fluid">
+      <!-- Selector de idioma -->
+      <div>
+        <select id="language-selector" class="block py-2.5 px-0 w-full text-sm text-gray-300 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>          
+        </select>
+      </div>
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#sugerencias" data-i18n="recomenu1">Sugerencias</a>
+          <a class="nav-link" href="#lista" data-i18n="recomenu2">Lista de series</a>
+          <a class="nav-link" href="#reseñas" data-i18n="recomenu3">Reseñas y comentarios </a>
+          <a class="nav-link" href="#actualizacion" data-i18n="recomenu4">Actualizaciones </a>
+          <a class="btn btn-door" href="index.html"> <i class="fas fa-door-open"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!--scrip para la internalizacion del contenido-->
+  <script>
+    //Función para cargar el archivo XML -->
+   function loadTranslations(language) {
+     var xhr = new XMLHttpRequest();
+     xhr.open("GET", "internacional.xml", true);
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         var parser = new DOMParser();
+         var xmlDoc = parser.parseFromString(xhr.responseText, "application/xml");
+
+         var translations = {};
+         var keys = xmlDoc.getElementsByTagName("key");
+         for (var i = 0; i < keys.length; i++) {
+           var name = keys[i].getAttribute("name");
+           var value = keys[i].getElementsByTagName(language)[0].textContent;
+           translations[name] = value;
+         }
+
+         i18next.init(
+           {
+             lng: language,
+             resources: {
+               [language]: {
+                 translation: translations,
+               },
+             },
+           },
+           function (err, t) {
+             document.querySelectorAll("[data-i18n]").forEach(function (element) {
+               element.innerHTML = t(element.getAttribute("data-i18n"));
+             });
+           }
+         );
+       }
+     };
+     xhr.send();
+   }
+
+   // Cambiar idioma con el selector
+   document.getElementById("language-selector").addEventListener("change", function () {
+     loadTranslations(this.value);
+   });
+
+   // Idioma predeterminado al cargar la página
+   window.onload = function () {
+     loadTranslations("es");
+   };
+ </script>
+<!--Aqui termina el script de la internalizacion del contenido-->
+   
+    <!--aqui termina la imagen-->
+
+  <div class="container mt-4">
+    <!--aqui entra la imagen-->
+    <section class="bg-black">
+      <div class="carousel-inner py-5" style="min-height: 100vh;">
+          <div class="carousel-item active">
+              <img src="pruebafotos/fondo8.webp" class="d-block w-100" alt="Menú saludable" style="height: 80vh; object-fit: cover; opacity: 0.7;">
+              <div class="carousel-caption d-flex justify-content-center align-items-center h-100" style="background: rgba(0, 0, 0, 0.622);">
+                  <h2 class="text-gradient fs-1 text-center animate__animated animate__bounceIn fw-bold" data-i18n="recotitulo" >RECOMENDACIONES</h2>
+              </div>
+          </div>
+      </div>
+    </section>
+      
+    <style>
+      .text-gradient {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textAnimation 3s ease-in-out infinite;
+      }
+
+      @keyframes textAnimation {
+          0%, 100% {
+              transform: translateY(0);
+          }
+          50% {
+              transform: translateY(-10px);
+          }
+      }
+      body {
+          background-image: url('pruebafotos/fondo3.avif')
+      }
+    </style>
+
+
+    <div class="container my-5"> 
+        <!-- Sección 1: Sugerencias de series según gustos -->
+        <section id="sugerencias" class="my-5">
+            <div class="container ">
+              <h2 class="text-2xl font-bold text-center mb-4" data-i18n="recosugerencia1">Sugerencias de Series Según Gustos</h2>
+          
+              <!-- Submenú -->
+              <ul class="nav nav-tabs mb-4  rounded-lg" id="sugerencias-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active border-2 border-danger text-dark" id="accion-tab" data-bs-toggle="tab" data-bs-target="#accion" type="button" role="tab" aria-controls="accion" aria-selected="true" data-i18n="recosugerencia2">Acción</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link border-2 border-danger text-dark" id="comedia-tab" data-bs-toggle="tab" data-bs-target="#comedia" type="button" role="tab" aria-controls="comedia" aria-selected="false" data-i18n="recosugerencia3">Comedia</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link border-2 border-danger text-dark" id="drama-tab" data-bs-toggle="tab" data-bs-target="#drama" type="button" role="tab" aria-controls="drama" aria-selected="false" data-i18n="recosugerencia4">Drama</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link border-2 border-danger text-dark" id="fantasia-tab" data-bs-toggle="tab" data-bs-target="#fantasia" type="button" role="tab" aria-controls="fantasia" aria-selected="false" data-i18n="recosugerencia5">Fantasía</button>
+                </li>
+              </ul>
+
+              <!-- Contenido del Submenú -->
+              <div class="tab-content " id="sugerencias-tabContent">
+                <!-- Acción -->
+                <div class="tab-pane fade show active" id="accion" role="tabpanel" aria-labelledby="accion-tab">
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="imgextras/breaking bad.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">Breaking Bad</h3>
+                      <p data-i18n="recosugerencia6">Una serie llena de acción y giros inesperados. Perfecta para amantes del suspenso y adrenalina.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="imgextras/TheMandalorian.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">The Mandalorian</h3>
+                      <p data-i18n="recosugerencia7">Aventuras intergalácticas con intensas escenas de acción y un toque de misterio.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="imgextras/cobra kai.jpg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                        <h3 class="text-lg font-semibold">Cobra Kai</h3>
+                        <p data-i18n="recosugerencia8">La serie explora la rivalidad entre Johnny y Daniel LaRusso décadas después de su famoso torneo de karate, mientras ambos intentan superar sus pasados y encontrar la redención.</p>
+                      </div>
+                  </div>
+                </div>
+          
+                <!-- Comedia -->
+                <div class="tab-pane fade" id="comedia" role="tabpanel" aria-labelledby="comedia-tab">
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded shadow-md">
+                      <img src="imgextras/the office.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">The Office</h3>
+                      <p data-i18n="recosugerencia9">Comedia en su máxima expresión con personajes inolvidables y situaciones hilarantes.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                      <img src="imgextras/Parks and Recreation.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">Parks and Recreation</h3>
+                      <p data-i18n="recosugerencia10">Risas garantizadas con un humor inteligente y personajes entrañables.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="imgextras/The Good Place.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                        <h3 class="text-lg font-semibold">The Good Place </h3>
+                        <p data-i18n="recosugerencia11">Risas garantizadas con un humor inteligente y personajes entrañables.</p>
+                      </div>
+                  </div>
+                </div>
+          
+                <!-- Drama -->
+                <div class="tab-pane fade" id="drama" role="tabpanel" aria-labelledby="drama-tab">
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded shadow-md">
+                      <img src="imgextras/GameofThrones.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">Juego de Tronos</h3>
+                      <p data-i18n="recosugerencia12">Intrigas políticas, luchas de poder y emociones intensas en cada episodio.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                      <img src="imgextras/The Crown.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">The Crown</h3>
+                      <p data-i18n="recosugerencia13">Un drama histórico que explora las complejidades de la monarquía británica.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="imgextras/breaking bad.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                        <h3 class="text-lg font-semibold">Breaking Bad</h3>
+                        <p data-i18n="recosugerencia14">Un profesor de química con cáncer es diagnosticado y decide usar sus conocimientos para producir metanfetamina y asegurar el futuro financiero de su familia.</p>
+                      </div>
+                  </div>
+                </div>
+          
+                <!-- Fantasía -->
+                <div class="tab-pane fade" id="fantasia" role="tabpanel" aria-labelledby="fantasia-tab">
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded shadow-md">
+                      <img src="imgextras/StrangerThings.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">Stranger Things</h3>
+                      <p data-i18n="recosugerencia15">Misterio sobrenatural y aventuras épicas en un entorno ochentero único.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                      <img src="imgextras/TheWitcher.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                      <h3 class="text-lg font-semibold">The Witcher</h3>
+                      <p data-i18n="recosugerencia16">Un mundo lleno de magia, monstruos y personajes fascinantes.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="imgextras/His Dark Materials.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" >
+                        <h3 class="text-lg font-semibold">His Dark Materials</h3>
+                        <p data-i18n="recosugerencia17">Es una serie con una trama compleja y filosófica, que explora temas como el libre albedrío y la naturaleza del bien y el mal. </p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+
+        <!-- Sección 2: Lista de series populares  -->
+        <section id="lista" class="my-10">
+            <div class="container">
+              <h2 class="text-center text-3xl font-extrabold mb-8 text-gray-800" data-i18n="recolista1">Lista de Series Populares</h2>
+          
+              <!-- Carrusel de Series -->
+              <div id="seriesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+          
+                  <!-- Serie 1 -->
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl mx-4">
+                        <img src="imgextras/TheMandalorian.jpeg" alt="The Mandalorian" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover">
+                        <div class="p-6">
+                          <h3 class="text-xl font-semibold text-gray-800" >The Mandalorian</h3>
+                          <p class="text-gray-600 mt-2" data-i18n="recolista2">Aventura épica en el universo de Star Wars, llena de acción y misterio.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Serie 2 -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl mx-4">
+                        <img src="imgextras/breaking bad.jpeg" alt="Breaking Bad" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover">
+                        <div class="p-6">
+                          <h3 class="text-xl font-semibold text-gray-800">Breaking Bad</h3>
+                          <p class="text-gray-600 mt-2" data-i18n="recolista3">Un profesor de química convertido en fabricante de drogas, en una lucha por la supervivencia.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Serie 3 -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl mx-4">
+                        <img src="imgextras/The Crown.jpeg" alt="The Crown" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                          <h3 class="text-xl font-semibold text-gray-800">The Crown</h3>
+                          <p class="text-gray-600 mt-2" data-i18n="recolista4">La historia de la reina Isabel II y los desafíos de la monarquía británica.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Serie 4 -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl mx-4">
+                        <img src="imgextras/GameofThrones.jpeg" alt="Juego de Tronos" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                          <h3 class="text-xl font-semibold text-gray-800">Juego de Tronos</h3>
+                          <p class="text-gray-600 mt-2" data-i18n="recolista5">Una guerra por el Trono de Hierro entre poderosas casas en un mundo medieval.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Serie 5 -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl mx-4">
+                        <img src="imgextras/the office.jpeg" alt="The Office" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                          <h3 class="text-xl font-semibold text-gray-800">The Office</h3>
+                          <p class="text-gray-600 mt-2" data-i18n="recolista6">Una comedia sobre la vida diaria en una oficina de Scranton, llena de personajes excéntricos.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Serie 6 -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl mx-4">
+                        <img src="imgextras/Brooklyn Nine-Nine.jpeg" alt="Brooklyn Nine-Nine" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                          <h3 class="text-xl font-semibold text-gray-800">Brooklyn Nine-Nine</h3>
+                          <p class="text-gray-600 mt-2" data-i18n="recolista7">Una serie de comedia centrada en una comisaría de policía llena de personajes hilarantes.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+          
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#seriesCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#seriesCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          
+ 
+        <!-- Sección 3: Reseñas y comentarios de usuarios  -->
+        <section id="reseñas" class="my-10">
+            <div class="container">
+              <h2 class="text-center text-3xl font-extrabold mb-8 text-gray-800" data-i18n="recoreseña1">Reseñas y Comentarios de Usuarios</h2>
+          
+              <!-- Sección de La Mandalorian -->
+              <div id="reseña-mandalorian" class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-semibold text-gray-800">The Mandalorian</h3>
+                <p class="text-gray-600 mt-2" data-i18n="recoreseña2">Una serie impresionante que lleva la experiencia de Star Wars a un nivel completamente nuevo. Un viaje épico de aventuras y momentos inolvidables.</p>
+                <div class="mt-4">
+                  <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- Estrellas para calificación -->
+                  <span class="ml-2 text-sm text-gray-500">4/5</span>
+                </div>
+          
+                <!-- Sección de Comentarios de La Mandalorian -->
+                <div id="comentarios-lista-mandalorian" class="mt-4">
+                  <!-- Aquí se agregarán los comentarios de La Mandalorian -->
+                </div>
+          
+                <!-- Campo para agregar un nuevo comentario -->
+                <textarea id="comentario-input-mandalorian" class="w-full mt-4 p-2 border border-gray-300 rounded-md"  placeholder="Escribe tu comentario..."></textarea>
+                <button onclick="agregarComentario('mandalorian')" class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600" data-i18n="recoreseña3">Agregar Comentario</button>
+              </div>
+          
+              <!-- Sección de Breaking Bad -->
+              <div id="reseña-breaking-bad" class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800">Breaking Bad</h3>
+                <p class="text-gray-600 mt-2" data-i18n="recoreseña4">Un relato fascinante de transformación personal y decisiones que cambian la vida. La actuación de Bryan Cranston es sencillamente excepcional.</p>
+                <div class="mt-4">
+                  <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- Estrellas para calificación -->
+                  <span class="ml-2 text-sm text-gray-500">5/5</span>
+                </div>
+          
+                <!-- Sección de Comentarios de Breaking Bad -->
+                <div id="comentarios-lista-breaking-bad" class="mt-4">
+                  <!-- Aquí se agregarán los comentarios de Breaking Bad -->
+                </div>
+          
+                <!-- Campo para agregar un nuevo comentario -->
+                <textarea id="comentario-input-breaking-bad" class="w-full mt-4 p-2 border border-gray-300 rounded-md" placeholder="Escribe tu comentario..."></textarea>
+                <button onclick="agregarComentario('breaking-bad')" class="mt-2 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"  data-i18n="recoreseña3">Agregar Comentario</button>
+              </div>
+            </div>
+          </section>
+          
+          <script>
+            // JSON para almacenar los comentarios por cada serie
+            let comentarios = {
+              "mandalorian": [],
+              "breaking-bad": []
+            };
+          
+            // Función para agregar un comentario a una serie
+            function agregarComentario(serie) {
+              const comentarioInput = document.getElementById(`comentario-input-${serie}`);
+              const comentarioTexto = comentarioInput.value.trim();
+          
+              if (comentarioTexto === "") {
+                alert("Por favor, escribe un comentario.");
+                return;
+              }
+          
+              // Agregar el nuevo comentario al JSON
+              comentarios[serie].push(comentarioTexto);
+          
+              // Actualizar la vista con el nuevo comentario
+              const comentariosLista = document.getElementById(`comentarios-lista-${serie}`);
+              const nuevoComentario = document.createElement("p");
+              nuevoComentario.classList.add("text-gray-600", "mt-2");
+              nuevoComentario.textContent = comentarioTexto;
+              comentariosLista.appendChild(nuevoComentario);
+          
+              // Limpiar el campo de entrada
+              comentarioInput.value = "";
+            }
+          
+            // Función para cargar los comentarios al cargar la página
+            function cargarComentarios() {
+              for (const serie in comentarios) {
+                const comentariosLista = document.getElementById(`comentarios-lista-${serie}`);
+                comentarios[serie].forEach(comentario => {
+                  const comentarioElemento = document.createElement("p");
+                  comentarioElemento.classList.add("text-gray-600", "mt-2");
+                  comentarioElemento.textContent = comentario;
+                  comentariosLista.appendChild(comentarioElemento);
+                });
+              }
+            }
+          
+            // Cargar los comentarios cuando la página se cargue
+            window.onload = cargarComentarios;
+          </script>
+  
+
+
+        <!-- Sección 4: Actualizaciones y nuevos lanzamientos -->
+        <section id="actualizacion" class="my-10">
+            <div class="container">
+              <h2 class="text-center text-3xl font-extrabold mb-8 text-gray-800" data-i18n="recoactualizacion1">Actualizaciones y Nuevos Lanzamientos de Series</h2>
+          
+              <!-- Submenú de Actualizaciones y Nuevos Lanzamientos -->
+              <ul class="nav nav-pills mb-4" id="actualizacionesTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="nuevos-lanzamientos-tab" data-bs-toggle="pill" href="#nuevos-lanzamientos" role="tab" aria-controls="nuevos-lanzamientos" aria-selected="true" data-i18n="recoactualizacion2">Nuevos Lanzamientos</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="actualizaciones-tab" data-bs-toggle="pill" href="#actualizaciones" role="tab" aria-controls="actualizaciones" aria-selected="false" data-i18n="recoactualizacion3">Actualizaciones</a>
+                </li>
+              </ul>
+          
+              <!-- Contenido de los Pestañas -->
+              <div class="tab-content" id="actualizacionesTabsContent">
+                <!-- Nuevos Lanzamientos -->
+                <div class="tab-pane fade show active" id="nuevos-lanzamientos" role="tabpanel" aria-labelledby="nuevos-lanzamientos-tab">
+                  <div class="space-y-4">
+                    <!-- Serie 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                      <h3 class="text-xl font-semibold text-gray-800" data-i18n="recoactualizacion4">Loki - Temporada 2</h3>
+                      <p class="text-gray-600 mt-2" data-i18n="recoactualizacion5">La continuación de las travesuras de Loki, ahora con más aventuras en múltiples realidades. ¡No te lo puedes perder!</p>
+                      <p class="text-gray-500 mt-1" data-i18n="recoactualizacion6">Fecha de Lanzamiento: 1 de febrero, 2025</p>
+                    </div>
+                    <!-- Serie 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                      <h3 class="text-xl font-semibold text-gray-800" data-i18n="recoactualizacion7">Stranger Things - Temporada 5</h3>
+                      <p class="text-gray-600 mt-2" data-i18n="recoactualizacion8">¡La última temporada de Stranger Things está aquí! Acompaña a los amigos mientras enfrentan nuevos horrores en el Mundo del Revés.</p>
+                      <p class="text-gray-500 mt-1" data-i18n="recoactualizacion9">Fecha de Lanzamiento: 15 de febrero, 2025</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Actualizaciones -->
+                <div class="tab-pane fade" id="actualizaciones" role="tabpanel" aria-labelledby="actualizaciones-tab">
+                  <div class="space-y-4">
+                    <!-- Actualización 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                      <h3 class="text-xl font-semibold text-gray-800" data-i18n="recoactualizacion10">The Witcher - Nueva Temporada</h3>
+                      <p class="text-gray-600 mt-2" data-i18n="recoactualizacion11">La serie más popular de fantasía regresa con una nueva temporada llena de magia, acción y traiciones. ¡La espera ha terminado!</p>
+                      <p class="text-gray-500 mt-1" data-i18n="recoactualizacion12">Actualización: 1 de enero, 2025</p>
+                    </div>
+                    <!-- Actualización 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg">
+                      <h3 class="text-xl font-semibold text-gray-800" data-i18n="recoactualizacion13">The Crown - Nueva Temporada</h3>
+                      <p class="text-gray-600 mt-2" data-i18n="recoactualizacion14">La historia de la monarquía británica continúa con nuevos episodios sobre el reinado de la Reina Isabel II.</p>
+                      <p class="text-gray-500 mt-1" data-i18n="recoactualizacion15">Actualización: 20 de enero, 2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <script>
+            // Opcional: script para activar las pestañas
+            const myTab = new bootstrap.Tab(document.querySelector('#nuevos-lanzamientos-tab'))
+            myTab.show();
+          </script>
+           
+    </div>
+  <footer class="bg-dark text-white py-3 mt-4">
+    <div class="container text-center">
+        <p data-i18n="footer"> 2025. Derechos reservados.</p>
+        <div class="social-icons mt-3">
+            <a class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

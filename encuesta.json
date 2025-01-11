@@ -1,0 +1,22 @@
+{
+    "actividades": [
+      "Breaking Bad",
+      "Game of Thrones",
+      "Stranger Things",
+      "The Crown",
+      "The Mandalorian",
+      "The Office"
+    ],
+    "frecuencias": [
+      "Netflix",
+      "HBO",
+      "Cuevana",
+      "MagisTV"
+    ],
+    "selecciones": [],
+    "preferencias": {
+      "frecuencia": "",
+      "descripcion": ""
+    },
+    "nuevasActividades": []
+  }

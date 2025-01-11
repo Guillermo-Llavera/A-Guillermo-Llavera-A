@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item>
+        <nombre>
+            <es>Inicio</es>
+            <en>Home</en>
+        </nombre>
+        <link>index.html</link>
+    </item>
+
+    <item>
+        <nombre>
+            <es>Encuesta de Opinion</es>
+            <en>Opinion Survey</en>
+        </nombre>
+        <link>encuesta.html</link>        
+    </item>
+
+    <item>
+        <nombre>
+            <es>Resultados</es>
+            <en>Results</en>
+        </nombre>
+        <link>resultados.html</link>
+    </item>
+
+    <item>
+        <nombre>
+            <es>Recomendaciones</es>
+            <en>Recommendations</en>
+        </nombre>
+        <link>recomendaciones.html</link>
+    </item>
+
+    <item>
+        <nombre>
+            <es>Foros</es>
+            <en>Forums</en>
+        </nombre>
+        <link>foros.html</link>
+    </item>
+    <item>
+        <nombre>
+            <es>Extras</es>
+            <en>Extra</en>
+        </nombre>
+        <link>extras.html</link>
+    </item>
+
+    <item>
+        <nombre>
+            <es>Preguntas Frecuentes</es>
+            <en>FAQ</en>
+        </nombre>
+        <link>faq.html</link>
+    </item>
+
+    <item>
+        <nombre>
+            <es>Contacto</es>
+            <en>Contact</en>
+        </nombre>
+        <link>contacto.html</link>
+    </item>
+</menu>

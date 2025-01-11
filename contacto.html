@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="contatitulo">Contacto</title>
+  <link rel="stylesheet" href="contacto.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery para simplificar -->
+  <script src="https://unpkg.com/i18next@21.6.3/i18next.min.js"></script> <!-- i18next -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <div class="container">
+      <!-- Selector de idioma -->
+      <!--<a class="navbar-brand">Contacto</a>-->
+      <div>
+        <select id="language-selector" class="block py-2.5 px-0 w-full text-sm text-gray-300 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>          
+        </select>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#formulario" data-i18n="contamenu1">Formulario de Sugerencias</a>
+          <a class="nav-link" href="#redesSociales" data-i18n="contamenu2">Redes Sociales</a>
+          <a class="nav-link" href="#opiniones" data-i18n="contamenu3">Opiniones Adicionales</a>
+          <a class="nav-link" href="#cliente" data-i18n="contamenu4">Contactactanos</a>
+          <a class="btn btn-door" href="index.html"> <i class="fas fa-door-open"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      <!--scrip para la internalizacion del contenido-->
+    <script>
+      //Función para cargar el archivo XML -->
+    function loadTranslations(language) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "internacional.xml", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var parser = new DOMParser();
+          var xmlDoc = parser.parseFromString(xhr.responseText, "application/xml");
+
+          var translations = {};
+          var keys = xmlDoc.getElementsByTagName("key");
+          for (var i = 0; i < keys.length; i++) {
+            var name = keys[i].getAttribute("name");
+            var value = keys[i].getElementsByTagName(language)[0].textContent;
+            translations[name] = value;
+          }
+
+          i18next.init(
+            {
+              lng: language,
+              resources: {
+                [language]: {
+                  translation: translations,
+                },
+              },
+            },
+            function (err, t) {
+              document.querySelectorAll("[data-i18n]").forEach(function (element) {
+                element.innerHTML = t(element.getAttribute("data-i18n"));
+              });
+            }
+          );
+        }
+      };
+      xhr.send();
+    }
+
+    // Cambiar idioma con el selector
+    document.getElementById("language-selector").addEventListener("change", function () {
+      loadTranslations(this.value);
+    });
+
+    // Idioma predeterminado al cargar la página
+    window.onload = function () {
+      loadTranslations("es");
+    };
+  </script>
+  <!--Aqui termina el script de la internalizacion del contenido-->
+    
+
+  <section class="bg-black">
+    <div class="carousel-inner py-5" style="min-height: 100vh;">
+        <div class="carousel-item active">
+            <img src="pruebafotos/fondo8.webp" class="d-block w-100" alt="Menú saludable" style="height: 80vh; object-fit: cover; opacity: 0.7;">
+            <div class="carousel-caption d-flex justify-content-center align-items-center h-100" style="background: rgba(0, 0, 0, 0.622);">
+                <h2 class="text-gradient fs-1 text-center animate__animated animate__bounceIn fw-bold" data-i18n="contabienvenida">Contactanos</h2>
+            </div>
+        </div>
+    </div>
+  </section>
+    <style>
+      .text-gradient {
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textAnimation 3s ease-in-out infinite;
+      }
+
+      @keyframes textAnimation {
+          0%, 100% {
+              transform: translateY(0);
+          }
+          50% {
+              transform: translateY(-10px);
+          }
+      }
+      body {
+            background-image: url('pruebafotos/fondo6.jpg')
+        }
+    </style>
+
+
+  <!-- Contenido -->
+  <div class="container mt-5">
+    <!-- Formulario de Contacto -->
+    <section id="formulario">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 data-i18n="contaformulario1">Formulario de Sugerencias</h2>
+          <p data-i18n="contaformulario2">¿Tienes alguna duda o consulta? Llena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+          <form id="contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label" data-i18n="contaformulario3">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"data-i18n="contaformulario4">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label" data-i18n="contaformulario5">Mensaje</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" data-i18n="contaformulario6">Enviar</button>
+          </form>
+          <div id="confirmation-message" class="alert alert-success mt-3 text-center" style="display: none;" data-i18n="contaformulario7">
+            Tu mensaje ha sido enviado. Nos comunicaremos contigo lo antes posible.
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/principal3.jpg" alt="Contacto" class="img-fluid rounded-circle">
+        </div>
+      </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section id="redesSociales" class="bg-light text-center py-5">
+      <h2 data-i18n="contredes1">Redes Sociales</h2>
+      <p data-i18n="contredes2">Síguenos en nuestras redes sociales y mantente al tanto de nuestras actualizaciones.</p>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-outline-primary m-2">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a class="btn btn-outline-info m-2">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a class="btn btn-outline-danger m-2">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a class="btn btn-outline-secondary m-2">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <!-- Opiniones adicionales  -->
+    <section id="opiniones" class="py-5">
+      <h2 class="text-center" data-i18n="contaopiniones1">Opiniones adicionales </h2>
+      <p class="text-center" data-i18n="contaopiniones2">Tu opinión nos ayuda a mejorar. Califica tu experiencia con nosotros:</p>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-success m-2" data-i18n="contaopiniones3">😊 Excelente</button>
+        <button class="btn btn-warning m-2" data-i18n="contaopiniones4">😐 Buena</button>
+        <button class="btn btn-danger m-2" data-i18n="contaopiniones5">☹ Mala</button>
+      </div>
+    </section>
+
+    <!-- Contacto con el equipo -->
+    <section id="cliente" class="bg-light py-5">
+      <h2 data-i18n="contacliente1">Contacto con el equipo</h2>
+      <p data-i18n="contacliente2">Estamos aquí para ayudarte. Contáctanos a través de cualquiera de los siguientes medios:</p>
+      <ul>
+        <li><strong data-i18n="contacliente3">Teléfono:</strong> +591 72381825</li>
+        <li><strong data-i18n="contacliente4">Email:</strong> alvarollavera123.com@gmail.com</li>
+        <li><strong data-i18n="contacliente5">Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+      </ul>
+      <a href="mailto:soporte@empresa.com" class="btn btn-primary" data-i18n="contacliente6">Enviar un correo</a>
+    </section>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+      <p data-i18n="contafooter">2025 Todos los derechos reservados.</p>
+      <a class="text-light" data-i18n="contafooter1">Política de Privacidad</a> | <a class="text-light" data-i18n="contafooter2">Términos de Uso</a>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      confirmationMessage.style.display = 'block';
+      form.reset();
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
